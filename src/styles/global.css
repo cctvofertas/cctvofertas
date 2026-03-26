@@ -19,6 +19,7 @@
     /* --- Neutral Scales --- */
     --white-pure: #FFFFFF;
     --white-soft: #F1F5F9;
+    --real-white: #FFFFFF;
     --slate-100: #F1F5F9;
     --slate-200: #E2E8F0;
     --slate-300: #CBD5E0;
@@ -48,9 +49,9 @@
     --font-mono: 'Roboto Mono', monospace;
     
     /* --- Effects --- */
-    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.4);
-    --shadow-pro: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.1);
-    --shadow-glow: 0 0 30px var(--accent-glow);
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-pro: 0 10px 30px -5px rgba(0, 0, 0, 0.08); /* Clean corporate shadow */
+    --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.1);
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-premium: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     --radius-md: 12px;
