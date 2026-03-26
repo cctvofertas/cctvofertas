@@ -866,3 +866,49 @@ p {
     }
     .main-nav.active .nav-list { display: flex; }
 }
+
+/* Specific Mobile Adjustments (Smartphones) */
+@media (max-width: 768px) {
+    /* Reduce overarching section padding to save screen space */
+    .section {
+        padding: 3rem 0; /* originally 6rem */
+    }
+    
+    .hero {
+        padding: 100px 0 60px; /* reduce hero upper/lower padding */
+    }
+
+    /* Reduce paddings in cards for mobile */
+    .category-card, 
+    .feature-block, 
+    .product-card__content,
+    .cta-block {
+        padding: 1.5rem; /* tightens margins inside cards */
+    }
+    
+    /* Target any custom big padding glasses */
+    .catalog-wrapper,
+    [style*="padding: 40px"],
+    [style*="padding: 100px"] {
+        padding: 1.5rem !important; 
+    }
+    
+    /* Typography sizing adjustments (smaller minimums and max sizes on mobile) */
+    h1 { font-size: clamp(2rem, 5vw, 2.5rem); } 
+    h2 { font-size: clamp(1.75rem, 4.5vw, 2rem); } 
+    h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); } 
+
+    /* Shrink the 3D container */
+    .hero__3d-container {
+        height: 280px; 
+    }
+
+    /* Tweak layout gaps */
+    .product-grid {
+        gap: 1.5rem;
+    }
+
+    .installation-grid {
+        gap: 2rem;
+    }
+}
