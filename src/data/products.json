@@ -1,0 +1,1563 @@
+[
+    {
+        "name": "Nvr Hikvision 8 Canales 4k Pro",
+        "price": 450000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0233.jpg",
+        "description": "Grabador de red (NVR) con soporte para Cámaras IP de hasta 8MP. Salida 4K y compresión H.265+.",
+        "category": "grabadores",
+        "brand": "hikvision",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el NVR Hikvision 8 Canales 4K Pro"
+    },
+    {
+        "name": "CáMara Ip Domo Uniview 4mp Poe",
+        "price": 320000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0236.jpg",
+        "description": "Cámara digital IP con alimentación PoE. Video nítido de 4MP y visión nocturna inteligente IR de 30m.",
+        "category": "cámaras",
+        "brand": "uniview",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara IP Uniview 4MP"
+    },
+    {
+        "name": "CáMara Ezviz H6c Pro 3k Inteligente",
+        "price": 199000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0247.jpg",
+        "description": "Cámara interior 3K con seguimiento automático. La mejor resolución para monitoreo residencial.",
+        "category": "smarthome",
+        "brand": "ezviz",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Ezviz H6C Pro"
+    },
+    {
+        "name": "CáMara Imou Ranger 2 Pro 2k",
+        "price": 150000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0239.jpg",
+        "description": "Vigilancia inteligente con detección de intrusos y sirena integrada. Gestión móvil simplificada.",
+        "category": "smarthome",
+        "brand": "imou",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Imou Ranger 2"
+    },
+    {
+        "name": "CáMara Bala Hikvision 2mp Turbohd",
+        "price": 85000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0238.jpg",
+        "description": "Cámara análoga de alta definición. Resistente a la intemperie (IP67) y visión nocturna de alta potencia.",
+        "category": "cámaras",
+        "brand": "hikvision",
+        "tech": "analoga",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Bala Hikvision 2MP"
+    },
+    {
+        "name": "CáMara Domo Dahua 5mp Full Color",
+        "price": 145000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0245.jpg",
+        "description": "Cámara con tecnología Full Color para ver a color las 24 horas del día. Resolución 5MP.",
+        "category": "cámaras",
+        "brand": "dahua",
+        "tech": "analoga",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Domo Dahua 5MP"
+    },
+    {
+        "name": "Kit Hikvision 4 Canales 1080p Lite",
+        "price": 680000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0233.jpg",
+        "description": "Incluye DVR de 4 canales, 4 Cámaras (bala o domo), disco duro de 1TB y accesorios de instalación.",
+        "category": "kits",
+        "brand": "hikvision",
+        "tech": "analoga",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Kit Hikvision 4 Canales"
+    },
+    {
+        "name": "Kit Dahua Ip 4 CáMaras Poe 4k",
+        "price": 1850000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0246.jpg",
+        "description": "Sistema IP profesional con NVR PoE y 4 Cámaras de 8MP. Mayor nitidez y facilidad de conexión.",
+        "category": "kits",
+        "brand": "dahua",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Kit Dahua IP 4K"
+    },
+    {
+        "name": "CáMara Wifi Exterior Ezviz C3w",
+        "price": 285000,
+        "image": "src/assets/images/products/adaptador-wifi-alfa.jpg",
+        "description": "Cámara con sirena y luz estroboscópica para disuasión activa. Audio bidireccional y protección IP67.",
+        "category": "cámaras",
+        "brand": "ezviz",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Ezviz C3W"
+    },
+    {
+        "name": "Disco Duro Wd Purple 4tb",
+        "price": 420000,
+        "image": "src/assets/images/products/disco-duro-wd-green-1tb.jpg",
+        "description": "Disco duro optimizado para almacenamiento de video 24/7. Alta fiabilidad y durabilidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Disco Duro WD 4TB"
+    },
+    {
+        "name": "CáMara Ip Robotizada Dahua 4mp",
+        "price": 380000,
+        "image": "src/assets/temp_uploads/IMG-20260317-WA0246.jpg",
+        "description": "Cámara IP con movimiento PAN/TILT. Zoom óptico y seguimiento de personas mediante IA.",
+        "category": "cámaras",
+        "brand": "dahua",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Robotizada Dahua"
+    },
+    {
+        "name": "Cerradura Inteligente Ezviz L2",
+        "price": 850000,
+        "image": "src/assets/images/products/accessory_fallback.png",
+        "description": "Apertura por huella, código, tarjeta o llave. Gestión completa desde la App Ezviz.",
+        "category": "smarthome",
+        "brand": "ezviz",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cerradura Ezviz L2"
+    },
+    {
+        "name": "Video Portero Ip Hikvision",
+        "price": 460000,
+        "image": "src/assets/images/products/capturadora-video-hdmi-usb.jpg",
+        "description": "Responde desde tu celular. Pantalla táctil de 7 pulgadas y Cámara oculta de alta resolución.",
+        "category": "smarthome",
+        "brand": "hikvision",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Video Portero Hikvision"
+    },
+    {
+        "name": "CáMara Solar Tenda Wifi 4mp",
+        "price": 480000,
+        "image": "src/assets/images/products/adaptador-wifi-alfa.jpg",
+        "description": "100% inalámbrica. Se carga con panel solar incluido. Ideal para fincas y sitios sin energía.",
+        "category": "cámaras",
+        "brand": "tenda",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Solar Tenda"
+    },
+    {
+        "name": "Cable Utp Cat6 Exterior 305m",
+        "price": 350000,
+        "image": "src/assets/images/products/cable-dp-hdmi.jpg",
+        "description": "Bobina de cable de alta calidad para instalaciones de Cámaras IP y redes de datos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Bobina de Cable UTP"
+    },
+    {
+        "name": "Fuentes De Poder Centralizada 18ch",
+        "price": 180000,
+        "image": "src/assets/images/products/accessory_fallback.png",
+        "description": "Organiza tus instalaciones. Una sola caja para alimentar hasta 18 Cámaras con fusibles individuales.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Fuente Centralizada"
+    },
+    {
+        "name": "Monitor De Seguridad Dahua 22\"",
+        "price": 450000,
+        "image": "src/assets/images/products/senal-seguridad-cctv.jpg",
+        "description": "Resolución Full HD y diseño industrial para uso continuo 24/7 en centros de monitoreo.",
+        "category": "accesorios",
+        "brand": "dahua",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Monitor Dahua 22"
+    },
+    {
+        "name": "Kit Hikvision Colorvu 4 CáMaras",
+        "price": 1150000,
+        "image": "src/assets/images/products/kit_fallback.png",
+        "description": "El mejor kit análogo del mercado. Cámaras que ven a color en la noche y DVR Turbo HD 5MP.",
+        "category": "kits",
+        "brand": "hikvision",
+        "tech": "analoga",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Kit ColorVu"
+    },
+    {
+        "name": "CáMara EstroboscóPica Dahua Tioc 5mp",
+        "price": 420000,
+        "image": "src/assets/images/products/bullet_camera_fallback.png",
+        "description": "Cámara 3 en 1: Disuasión activa con luces rojas/azules, sirena e Inteligencia Artificial WizSense.",
+        "category": "cámaras",
+        "brand": "dahua",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara TiOC Dahua"
+    },
+    {
+        "name": "CáMara Imou Bullet 2c Con Audio",
+        "price": 135000,
+        "image": "src/assets/images/products/bullet_camera_fallback.png",
+        "description": "Cámara exterior WiFi con micrófono incorporado. Detecta sonidos extraños y envía alertas al celular.",
+        "category": "cámaras",
+        "brand": "imou",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Imou Bullet 2C"
+    },
+    {
+        "name": "Mouse Pad Con Soporte De Gel",
+        "price": 25000,
+        "image": "src/assets/images/products/mouse-pad-gel.jpg",
+        "description": "Mouse pad ergonómico con soporte de gel para la muñeca. Reduce la fatiga y mejora la precisión.",
+        "category": "accesorios",
+        "brand": "maxprinter",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Pad con Soporte de Gel"
+    },
+    {
+        "name": "Sistema De RefrigeracióN Para Chasis",
+        "price": 85000,
+        "image": "src/assets/images/products/case-cooling-system.jpg",
+        "description": "Kit de ventiladores de alto rendimiento para chasis con iluminación RGB. Mantén tu equipo fresco con estilo.",
+        "category": "accesorios",
+        "brand": "corsair",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Sistema de Refrigeración para Chasis"
+    },
+    {
+        "name": "Multitoma De 6 Servicios Globy",
+        "price": 35000,
+        "image": "src/assets/images/products/multitoma-6-servicios.jpg",
+        "description": "Regleta multitoma de 6 servicios con interruptor de encendido/apagado y protección de picos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Multitoma de 6 Servicios"
+    },
+    {
+        "name": "Ventilador Rgb Para Pc",
+        "price": 45000,
+        "image": "src/assets/images/products/fan-rgb.jpg",
+        "description": "Ventilador silencioso de 120mm con anillos de luz RGB. Optimizado para flujo de aire constante.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Ventilador RGB para PC"
+    },
+    {
+        "name": "Grasa TéRmica Hy510 En Jeringa",
+        "price": 15000,
+        "image": "src/assets/images/products/thermal-grease-syringe.jpg",
+        "description": "Compuesto térmico de alta conductividad para procesadores y GPUs. fácil aplicación en jeringa de 20ml.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Grasa Térmica en Jeringa"
+    },
+    {
+        "name": "Grasa TéRmica Hy510 Tarro",
+        "price": 25000,
+        "image": "src/assets/images/products/thermal-grease-jar.jpg",
+        "description": "Pasta térmica de alto rendimiento en presentación de tarro. Ideal para técnicos y múltiples aplicaciones.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Tarro de Grasa Térmica"
+    },
+    {
+        "name": "Grasa TéRmica Hy510 Gris",
+        "price": 12000,
+        "image": "src/assets/images/products/thermal-grease-hy510.jpg",
+        "description": "Excelente conductividad térmica para mejorar la disipación de calor de tus componentes electrónicos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Grasa Térmica HY510"
+    },
+    {
+        "name": "Caddy Para Segundo Disco Duro",
+        "price": 30000,
+        "image": "src/assets/images/products/hdd-caddy.jpg",
+        "description": "Adaptador para instalar un segundo disco duro o SSD en el espacio de la unidad óptica del portátil.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Caddy para Segundo Disco"
+    },
+    {
+        "name": "MicróFono Solapa K8 Wireless",
+        "price": 24000,
+        "image": "src/assets/images/products/microfonos-luz-led.jpg",
+        "description": "Micrófono de solapa inalámbrico K8. Ideal para grabaciones con celular, plug and play.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Micrófono Solapa K8"
+    },
+    {
+        "name": "MicróFono Solapa K9 Wireless Duo",
+        "price": 27000,
+        "image": "src/assets/images/products/microfonos-luz-led.jpg",
+        "description": "Sistema de micrófono doble de solapa K9. Conexión inalámbrica estable para entrevistas y vlogs.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Micrófono Solapa K9"
+    },
+    {
+        "name": "Luz Led 5 Metros Mural",
+        "price": 18000,
+        "image": "src/assets/images/products/microfonos-luz-led.jpg",
+        "description": "Tira de luz LED de 5 metros para decoración de hogar. fácil instalación.",
+        "category": "smarthome",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Luz LED 5 Metros"
+    },
+    {
+        "name": "Cinta Led Rgb  Control Remoto",
+        "price": 22000,
+        "image": "src/assets/images/products/microfonos-luz-led.jpg",
+        "description": "Cinta LED multicolor con control remoto y adaptador de corriente incluido.",
+        "category": "smarthome",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cinta LED RGB"
+    },
+    {
+        "name": "Adaptador Sata A Usb 3.0",
+        "price": 25000,
+        "image": "src/assets/images/products/adaptador-sata-usb.jpg",
+        "description": "Conecta discos duros de 2.5 pulgadas directamente al puerto USB. Velocidad USB 3.0.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador SATA a USB"
+    },
+    {
+        "name": "Diadema Stereo Classic JR",
+        "price": 15000,
+        "image": "src/assets/images/products/diadema-jr-classic.jpg",
+        "description": "Auriculares estéreo con micrófono ajustable. Diseño ligero y cómodo para oficina.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Diadema Classic J&R"
+    },
+    {
+        "name": "Diadema Gamer JR 7.1 Virtual",
+        "price": 65000,
+        "image": "src/assets/images/products/diadema-jr-gamer.jpg",
+        "description": "Diadema para juegos con sonido 7.1 virtual, luces LED y conexión USB. Micrófono con cancelación de ruido.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Diadema Gamer J&R"
+    },
+    {
+        "name": "CáMara Ip Ptz Socket",
+        "price": 95000,
+        "image": "src/assets/images/products/camara-ip-socket.jpg",
+        "description": "Cámara de seguridad que se instala como un bombillo. Movimiento PTZ y visión nocturna.",
+        "category": "cámaras",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara IP Socket"
+    },
+    {
+        "name": "Convertidor Usb A Serial Rs232",
+        "price": 18000,
+        "image": "src/assets/images/products/convertidor-usb-serial.jpg",
+        "description": "Cable adaptador USB a puerto serial de 9 pines. Compatible con equipos industriales y consolas.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Convertidor USB a Serial"
+    },
+    {
+        "name": "Caja De ProteccióN Para CáMaras",
+        "price": 12000,
+        "image": "src/assets/images/products/caja-proteccion-camara.jpg",
+        "description": "Housing metálico para proteger Cámaras de seguridad en exteriores. Resistente a la intemperie.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Caja de Protección"
+    },
+    {
+        "name": "Cargador RáPido 20w Usb-C",
+        "price": 35000,
+        "image": "src/assets/images/products/cargador-usb-c-20w.jpg",
+        "description": "Kit de carga rápida con cubo de 20W y cable USB-C a Lightning o USB-C. Ideal para smartphones modernos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cargador Rápido 20W"
+    },
+    {
+        "name": "Receptor Bluetooth Auxiliar",
+        "price": 20000,
+        "image": "src/assets/images/products/receptor-bluetooth-aux.jpg",
+        "description": "Convierte cualquier equipo con entrada auxiliar en receptor Bluetooth. Ideal para carros y parlantes.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Receptor Bluetooth Auxiliar"
+    },
+    {
+        "name": "Caja De ProteccióN Para CáMara V2",
+        "price": 12000,
+        "image": "src/assets/images/products/caja-proteccion-v2.jpg",
+        "description": "Soporte y caja de protección para Cámaras de seguridad. Diseño compacto y resistente.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Caja de Protección V2"
+    },
+    {
+        "name": "CáMara Ptz Exterior Wifi 1080p",
+        "price": 145000,
+        "image": "src/assets/images/products/camara-ptz-v1.jpg",
+        "description": "Cámara robótica para exterior. Seguimiento inteligente, audio bidireccional y alertas al celular.",
+        "category": "cámaras",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara PTZ Exterior"
+    },
+    {
+        "name": "Brazo Soporte Extensible 45-90cm",
+        "price": 28000,
+        "image": "src/assets/images/products/soporte-brazo-extendible.jpg",
+        "description": "Soporte metálico extensible para Cámaras de seguridad. Ajustable desde 45cm hasta 90cm.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte Extensible"
+    },
+    {
+        "name": "Adaptador Type-C A 3.5mm Aux",
+        "price": 15000,
+        "image": "src/assets/images/products/adaptador-type-c-aux.jpg",
+        "description": "Conecta tus audífonos tradicionales a dispositivos con puerto USB Tipo C. Sonido de alta fidelidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador Type-C a 3.5mm"
+    },
+    {
+        "name": "Tester De Cable De Red Rj45/Rj11",
+        "price": 30000,
+        "image": "src/assets/images/products/tester-cable-red.jpg",
+        "description": "Herramienta esencial para probar cables de red y telefonía. Indica fallas de conexión y cortos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Tester de Cable de Red"
+    },
+    {
+        "name": "Adaptador Usb-C A Hdmi 4k",
+        "price": 45000,
+        "image": "src/assets/images/products/adaptador-usb-c-hdmi.jpg",
+        "description": "Conecta tu laptop o celular a un monitor o TV vía HDMI. Soporta resolución 4K.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador USB-C a HDMI"
+    },
+    {
+        "name": "Cable Usb-C A Usb-C De Carga",
+        "price": 18000,
+        "image": "src/assets/images/products/cable-usb-c-3a.jpg",
+        "description": "Cable de alta calidad para carga rápida y transferencia de datos. Soporta hasta 3A.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cable USB-C"
+    },
+    {
+        "name": "Cable Micro Usb 3.0 Disco Duro",
+        "price": 22000,
+        "image": "src/assets/images/products/cable-micro-usb-disco.jpg",
+        "description": "Cable especial para discos duros externos USB 3.0. Alta velocidad de transferencia.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cable para Disco Duro"
+    },
+    {
+        "name": "CáMara Ptz Exterior De Alta Potencia",
+        "price": 165000,
+        "image": "src/assets/images/products/camara-ptz-v2.jpg",
+        "description": "Cámara domo con múltiples LEDs para visión nocturna a color de largo alcance. Wifi y PTZ.",
+        "category": "cámaras",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara PTZ Alta Potencia"
+    },
+    {
+        "name": "Adaptador Hdmi A Vga Ugreen",
+        "image": "src/assets/images/products/adaptador-hdmi-vga-ugreen.jpg",
+        "description": "Convertidor de alta calidad para conectar dispositivos HDMI a monitores o proyectores VGA.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador HDMI a VGA Ugreen"
+    },
+    {
+        "name": "Pila Lr44 / Ag13 Alcalina",
+        "image": "src/assets/images/products/pila-lr44-ag13.jpg",
+        "description": "Pila de botón de 1.5V para dispositivos pequeños, calculadoras y juguetes.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas LR44"
+    },
+    {
+        "name": "Diadema Multimedia Wit Con MicróFono",
+        "image": "src/assets/images/products/diadema-wit-mic.jpg",
+        "description": "Audífonos ligeros con micrófono para oficina y videollamadas. Conexión plug 3.5mm.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Diadema Multimedia WIT"
+    },
+    {
+        "name": "Mouse InaláMbrico Kensington",
+        "image": "src/assets/images/products/mouse-kensington-blue.jpg",
+        "description": "Mouse ergonómico inalámbrico de alta precisión. Color azul metalizado.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Kensington"
+    },
+    {
+        "name": "Cargador RáPido Nia Qc 3.0  Cable",
+        "image": "src/assets/images/products/cargador-nia-qc3.jpg",
+        "description": "Kit de carga rápida Qualcomm 3.0. Incluye adaptador de pared y cable USB-C.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cargador NIA QC 3.0"
+    },
+    {
+        "name": "Extensor Usb Sobre Ethernet Rj45",
+        "image": "src/assets/images/products/extensor-usb-rj45.jpg",
+        "description": "Extiende tu señal USB hasta 45 metros a través de cable de red Cat5e/6.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor USB RJ45"
+    },
+    {
+        "name": "Antena Wifi Usb De Largo Alcance",
+        "image": "src/assets/images/products/antena-wifi-usb.jpg",
+        "description": "Adaptador wifi USB con antena externa para mejorar la recepción de señal en PCs y laptops.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Antena Wifi USB"
+    },
+    {
+        "name": "Bolsa De Conectores Rj45 Cat6",
+        "image": "src/assets/images/products/conector-rj45-bolsa.jpg",
+        "description": "Pack de conectores modulares RJ45 para ponchado de cable de red categoría 6.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Conectores RJ45"
+    },
+    {
+        "name": "Caja Para Disco Duro 2.5\" JR Usb 3.0",
+        "image": "src/assets/images/products/case-disco-jr.jpg",
+        "description": "Case metálico para convertir discos duros internos en externos. Velocidad 5Gb/s.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Caja para Disco Duro J&R"
+    },
+    {
+        "name": "Pila Energizer A23 12v",
+        "image": "src/assets/images/products/pila-energizer-a23.jpg",
+        "description": "Pila alcalina especial de 12V para controles remotos, alarmas y llaves de carro.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Pila Energizer A23"
+    },
+    {
+        "name": "Mouse óPtico Usb BáSico",
+        "image": "src/assets/images/products/mouse-optico-basico.jpg",
+        "description": "Mouse de conexión cableada USB, fiable y duradero para uso diario en oficina.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Óptico Básico"
+    },
+    {
+        "name": "Hub Usb 3.0 Ultra-Slim 4 Puertos",
+        "image": "src/assets/images/products/hub-usb-3-0-4-puertos.jpg",
+        "description": "Expande un puerto USB a cuatro con velocidad SuperSpeed 3.0. Diseño compacto.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Hub USB 3.0"
+    },
+    {
+        "name": "Receptor Bluetooth Auxiliar Pro",
+        "image": "src/assets/images/products/receptor-bluetooth-pro.jpg",
+        "description": "Receptor Bluetooth con clip y mandos integrados. Transforma audífonos tradicionales en inalámbricos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Receptor Bluetooth Pro"
+    },
+    {
+        "name": "Adaptador Type-C A Hdmi 4k White",
+        "image": "src/assets/images/products/adaptador-type-c-hdmi-white.jpg",
+        "description": "Convertidor USB-C a HDMI para salida de video 4K en pantallas externas. Elegante acabado blanco.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador Type-C a HDMI Blanco"
+    },
+    {
+        "name": "Adaptador Usb 3.0 A Vga Xue",
+        "image": "src/assets/images/products/adaptador-usb-vga-xue.jpg",
+        "description": "Tarjeta de video externa USB a VGA. Permite añadir un monitor adicional a tu PC.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador USB a VGA XUE"
+    },
+    {
+        "name": "Mini Adaptador Bluetooth 5.0 Usb",
+        "image": "src/assets/images/products/mini-bluetooth-usb.jpg",
+        "description": "Añade Bluetooth 5.0 a cualquier computadora con este adaptador ultra compacto.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mini Adaptador Bluetooth"
+    },
+    {
+        "name": "Hub Usb 4 Puertos Con Switch Individual",
+        "image": "src/assets/images/products/hub-usb-switch.jpg",
+        "description": "Hub USB con interruptores de encendido/apagado para cada puerto. Indicadores LED azules.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Hub USB con Switch"
+    },
+    {
+        "name": "Cable Displayport A Hdmi 1.8m",
+        "image": "src/assets/images/products/cable-dp-hdmi.jpg",
+        "description": "Cable adaptador para conectar PCs con salida DisplayPort a monitores o TVs HDMI.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cable DP a HDMI"
+    },
+    {
+        "name": "Kit Extensor Usb Rj45 V2",
+        "image": "src/assets/images/products/extensor-usb-rj45-v2.jpg",
+        "description": "Adaptador de extensión USB vía cable de red. Ideal para Cámaras web o impresoras a distancia.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Kit Extensor USB RJ45"
+    },
+    {
+        "name": "Adaptador Rj45 Duplicador / Splitter",
+        "image": "src/assets/images/products/adaptador-rj45-duplicador.jpg",
+        "description": "Permite compartir una toma de red entre dos dispositivos. Ideal para extensiones rápidas.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador RJ45 Duplicador"
+    },
+    {
+        "name": "Hub Usb 3.0 De 7 Puertos Superspeed",
+        "image": "src/assets/images/products/hub-usb-7-puertos.jpg",
+        "description": "Multiplica tus conexiones con este Hub de 7 puertos USB 3.0 de alta velocidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Hub USB 7 Puertos"
+    },
+    {
+        "name": "Hub Usb 3.0 Compacto 4 Puertos",
+        "image": "src/assets/images/products/hub-usb-4-puertos-basic.jpg",
+        "description": "Hub USB 3.0 básico y portátil. Conecta hasta 4 dispositivos simultáneamente.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Hub USB 4 Puertos"
+    },
+    {
+        "name": "Cable Displayport A Vga 1.8m",
+        "image": "src/assets/images/products/cable-dp-vga.jpg",
+        "description": "Conecta tu PC con salida DP a monitores antiguos con entrada VGA. Calidad de imagen estable.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cable DP a VGA"
+    },
+    {
+        "name": "Adaptador Type-C A Vga Steren",
+        "image": "src/assets/images/products/adaptador-type-c-vga-steren.jpg",
+        "description": "Adaptador de alta fidelidad marca Steren. Conecta laptops Type-C a proyectores VGA.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador Type-C a VGA Steren"
+    },
+    {
+        "name": "Tarjeta De Sonido Usb Externa 7.1",
+        "image": "src/assets/images/products/adaptador-sonido-usb.jpg",
+        "description": "Simula sonido 7.1. Ideal si la tarjeta de sonido de tu PC está dañada. Control de volumen integrado.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Tarjeta de Sonido USB"
+    },
+    {
+        "name": "Capturadora De Video Hdmi A Usb 1080p",
+        "image": "src/assets/images/products/capturadora-video-hdmi-usb.jpg",
+        "description": "Graba o transmite video desde Cámaras, consolas o PCs. Plug & Play, resolución Full HD.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Capturadora de Video HDMI"
+    },
+    {
+        "name": "Pack Pilas Lr41 / Ag3 Beston",
+        "image": "src/assets/images/products/pila-lr41-beston.jpg",
+        "description": "Pilas alcalinas de botón. Larga duración para termómetros, relojes y dispositivos médicos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas LR41 Beston"
+    },
+    {
+        "name": "Mouse Gamer Rgb Ultra-Light Hive",
+        "image": "src/assets/images/products/mouse-gamer-rgb-hive.jpg",
+        "description": "Diseño de panal ultra ligero. Iluminación RGB dinámica y sensor de alta precisión. Color blanco.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Gamer Hive"
+    },
+    {
+        "name": "Pilas Recargables Aa Varta 1400mah",
+        "image": "src/assets/images/products/pilas-varta-aa-recargables.jpg",
+        "description": "Par de pilas recargables de tecnología NiMH. Listas para usar. 750 ciclos de carga.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas Varta Recargables"
+    },
+    {
+        "name": "Adaptador Wifi Usb Alfa Largo Alcance",
+        "image": "src/assets/images/products/adaptador-wifi-alfa.jpg",
+        "description": "Chipset de alta sensibilidad. Proporciona una conexión wifi estable en zonas difíciles.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador Wifi Alfa"
+    },
+    {
+        "name": "Patch Panel 48 Puertos Cat5e Rack",
+        "image": "src/assets/images/products/patch-panel-48-cat5e.jpg",
+        "description": "Panel de parcheo de alta densidad para organización de cableado estructurado en racks.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Patch Panel 48 Puertos"
+    },
+    {
+        "name": "Patch Panel 24 Puertos Cat6 Quest",
+        "image": "src/assets/images/products/patch-panel-24-cat6.jpg",
+        "description": "Panel de parcheo categoría 6 para velocidades de 1Gbps. Diseño robusto y fácil ponchado.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Patch Panel 24 Puertos Cat6"
+    },
+    {
+        "name": "Convertidor Usb-C A Usb-A 3.0 Jsaux",
+        "image": "src/assets/images/products/adaptador-type-c-otg.jpg",
+        "description": "Cable OTG de alta calidad con trenzado de nylon. Transmisión de datos rápida 5Gbps.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador USB-C a USB-A"
+    },
+    {
+        "name": "Mouse óPtico Jedel Standard",
+        "image": "src/assets/images/products/mouse-jedel-basico.jpg",
+        "description": "Mouse esencial de oficina. Conexión USB, 1000 DPI. Fiabilidad a bajo costo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Jedel Standard"
+    },
+    {
+        "name": "Pila Lr1130 / Ag10 Alcalina",
+        "image": "src/assets/images/products/pila-lr1130-ag10.jpg",
+        "description": "Pila de botón de 1.5V. Comúnmente usada en punteros láser, libros de niños y pequeños gadgets.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas LR1130"
+    },
+    {
+        "name": "Adaptador Hdmi A Vga Black Edition",
+        "image": "src/assets/images/products/adaptador-hdmi-vga-black.jpg",
+        "description": "Versión compacta y elegante del adaptador HDMI a VGA. Alta compatibilidad con laptops.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador HDMI a VGA"
+    },
+    {
+        "name": "Pila Cr1220 3v Lithium",
+        "image": "src/assets/images/products/pila-cr1220-3v.jpg",
+        "description": "Pila de litio tipo moneda. Utilizada en placas base de PCs, básculas y controles remotos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Pila CR1220"
+    },
+    {
+        "name": "BateríA Nimh 2.4v Gp Recargable",
+        "image": "src/assets/images/products/bateria-nimh-2-4v.jpg",
+        "description": "Batería interna de repuesto para teléfonos inalámbricos y juguetes. Conector incluido.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Batería GP 2.4V"
+    },
+    {
+        "name": "Ups / Regulador De Voltaje 8 Tomas",
+        "image": "src/assets/images/products/ups-regulador-8-tomas.jpg",
+        "description": "Protección total para tus equipos electrónicos. Filtra picos de voltaje y mantiene equipos encendidos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Regulador de Voltaje"
+    },
+    {
+        "name": "Keystone Jack Cat5e Rojo",
+        "image": "src/assets/images/products/keystone-jack-cat5e-red.jpg",
+        "description": "Módulo keystone RJ45 categoría 5e para placas de pared o patch panels frontales. Color rojo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Keystone Jack Rojo"
+    },
+    {
+        "name": "Protector Rj45 Gris Botas",
+        "image": "src/assets/images/products/protector-rj45-gris.jpg",
+        "description": "Capuchón protector para conectores RJ45. Evita daños en la pestaña y facilita la identificación.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Protectores RJ45 Grises"
+    },
+    {
+        "name": "Mouse InaláMbrico Havit Pro",
+        "image": "src/assets/images/products/mouse-inalambrico-havit.jpg",
+        "description": "Mouse ergonómico con conexión inalámbrica 2.4GHz. Diseño ultra-slim y clics silenciosos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "wifi",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Inalámbrico Havit"
+    },
+    {
+        "name": "Mouse Gamer óPtico Z69",
+        "image": "src/assets/images/products/mouse-gamer-optico-basic.jpg",
+        "description": "Mouse especializado para juegos con sensor óptico de alta precisión y luces LED decorativas.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Gamer Z69"
+    },
+    {
+        "name": "Pilas Varta Aa Alcalinas X2",
+        "image": "src/assets/images/products/pilas-varta-aa-alcalinas.jpg",
+        "description": "Paquete de 2 pilas alcalinas AA de alto rendimiento. Ideales para controles y juguetes.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas Varta AA"
+    },
+    {
+        "name": "Hub Usb-C 8-En-1 Linkon",
+        "image": "src/assets/images/products/hub-usb-c-multiport-rj45-hdmi.jpg",
+        "description": "Estación de acoplamiento Type-C con 4K HDMI, RJ45 Gigabit, Lectores SD y puertos USB 3.0.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Hub USB-C Multiport"
+    },
+    {
+        "name": "Pila Varta 9v Alcalina",
+        "image": "src/assets/images/products/pila-varta-9v-alcalina.jpg",
+        "description": "Pila cuadrada de 9V para multímetros, detectores de humo y equipos de audio profesional.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Pila Varta 9V"
+    },
+    {
+        "name": "Mouse Gamer Czf Rgb Precision",
+        "image": "src/assets/images/products/mouse-gamer-czf-rgb.jpg",
+        "description": "Mouse gamer con pesos ajustables y software de configuración. Iluminación RGB personalizable.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Mouse Gamer CZF"
+    },
+    {
+        "name": "Clavija Macho EléCtrica Standard",
+        "image": "src/assets/images/products/clavija-macho-blanca.jpg",
+        "description": "Enchufe macho de alta resistencia para reparación de cables eléctricos. Color blanco.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Clavija Macho Blanca"
+    },
+    {
+        "name": "Pila Cr2032 3v Rayovac",
+        "image": "src/assets/images/products/pila-cr2032-rayovac.jpg",
+        "description": "Pila de litio Rayovac de larga duración. Esencial para bios de computadoras y sensores.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Pila CR2032 Rayovac"
+    },
+    {
+        "name": "Conector Rj45 Cat6 Shielded MetáLico",
+        "image": "src/assets/images/products/conector-rj45-cat6-shielded.jpg",
+        "description": "Blindaje metálico para evitar interferencias electromagnéticas. Máximo rendimiento Cat6.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Conectores RJ45 Blindados"
+    },
+    {
+        "name": "Toma Hembra EléCtrica Standard",
+        "image": "src/assets/images/products/toma-hembra-blanca.jpg",
+        "description": "Conector hembra aéreo para extensiones eléctricas de uso doméstico o comercial.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Toma Hembra Blanca"
+    },
+    {
+        "name": "Conector Rj45 Cat5e Standard X Unidad",
+        "image": "src/assets/images/products/conector-rj45-pack.jpg",
+        "description": "Conectores fiables con contactos bañados en oro para una transmisión de datos óptima.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Conectores RJ45"
+    },
+    {
+        "name": "Splitter Hdmi 1 Entrada X 4 Salidas",
+        "image": "src/assets/images/products/splitter-hdmi-1x4.jpg",
+        "description": "Duplica una señal de video HDMI a 4 pantallas simultáneamente. Soporta Full HD y 3D.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Splitter HDMI 1x4"
+    },
+    {
+        "name": "Extensor Vga Por Cable Upn 60m",
+        "image": "src/assets/images/products/extensor-vga-rj45-60m.jpg",
+        "description": "Envía señal VGA a distancias largas usando cable de red económico. Hasta 60 metros.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor VGA 60M"
+    },
+    {
+        "name": "Protector Rj45 Rojo Botas",
+        "image": "src/assets/images/products/protector-rj45-rojo.jpg",
+        "description": "Capuchones protectores de color rojo para identificación de redes críticas o bypass.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Protectores RJ45 Rojos"
+    },
+    {
+        "name": "Conectores Scotchlok Uy2 X Unidad",
+        "image": "src/assets/images/products/conectores-scotchlok-uy2.jpg",
+        "description": "Conectores de gel para empalmes telefónicos o de alarmas sin necesidad de pelar cables.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Conectores Scotchlok"
+    },
+    {
+        "name": "Kit Extensor Hdmi Sobre Cat5e/6 Azul",
+        "image": "src/assets/images/products/extensor-hdmi-rj45-azul.jpg",
+        "description": "Kit emisor/receptor para extender HDMI a través de cable ethernet. Color azul.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI RJ45"
+    },
+    {
+        "name": "Keystone Jack Cat6 Azul Premium",
+        "image": "src/assets/images/products/keystone-jack-cat6-blue.jpg",
+        "description": "Módulo de red categoría 6 con certificación Gigabit. Ideal para rack o faceplates.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Keystone Jack Azul"
+    },
+    {
+        "name": "Ups / Regulador 8 Tomas Powerpro",
+        "image": "src/assets/images/products/ups-regulador-v2.jpg",
+        "description": "Protección avanzada para servidores y DVRs. 8 tomas protegidas con respaldo de batería.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Regulador de Voltaje Pro"
+    },
+    {
+        "name": "Extensor Hdmi 4k 120m Por Rj45",
+        "image": "src/assets/images/products/extensor-hdmi-4k-120m.jpg",
+        "description": "Transmite video 4K a distancias extremas usando un solo cable de red Cat5e/6. Tecnología avanzada sin pérdida.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI 4K 120M"
+    },
+    {
+        "name": "Extensor Hdmi 50m Full Hd Basic",
+        "image": "src/assets/images/products/extensor-hdmi-50m-basic.jpg",
+        "description": "Solución económica para extender HDMI hasta 50 metros en resolución 1080p. Plug & Play.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI 50M"
+    },
+    {
+        "name": "Conectores Scotchlok Uy2 Pack X2",
+        "image": "src/assets/images/products/conectores-scotchlok-uy2-pack.jpg",
+        "description": "Doble unidad de conectores de gel Bosch para conexiones de baja corriente seguras y rápidas.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Pack Scotchlok UY2"
+    },
+    {
+        "name": "Ups / Regulador 8 Tomas Powersave",
+        "image": "src/assets/images/products/ups-regulador-v3-8-tomas.jpg",
+        "description": "Protector de voltaje de 8 tomas con estabilizador automático. Ideal para equipos de red y hogar.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Regulador de 8 Tomas"
+    },
+    {
+        "name": "Pilas Varta Aaa Recargables X2",
+        "image": "src/assets/images/products/pilas-varta-aaa-recargables.jpg",
+        "description": "Par de pilas AAA recargables de tecnología Ready2Use. Vida útil prolongada y carga estable.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas AAA Recargables"
+    },
+    {
+        "name": "Splitter Hdmi 1 Entrada X 2 Salidas",
+        "image": "src/assets/images/products/splitter-hdmi-1x2.jpg",
+        "description": "Divide una entrada HDMI en dos pantallas. Soporta sincronización de audio y video de alta fidelidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Splitter HDMI 1x2"
+    },
+    {
+        "name": "Protector Rj45 Azul Botas",
+        "image": "src/assets/images/products/protector-rj45-azul.jpg",
+        "description": "Protección para conectores ethernet en rack. Identifica visualmente puntos de red azul.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Protectores RJ45 Azules"
+    },
+    {
+        "name": "Patch Panel Fibra óPtica Rack Mount",
+        "image": "src/assets/images/products/patch-panel-fibra-optica.jpg",
+        "description": "Organizador de conexiones de fibra óptica para racks profesionales. Gestión de cableado limpia.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Patch Panel de Fibra"
+    },
+    {
+        "name": "Clavija Macho Blanca Pro-Series",
+        "image": "src/assets/images/products/clavija-macho-blanca-v2.jpg",
+        "description": "Enchufe macho reforzado para reparaciones eléctricas de alta durabilidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Clavija Macho Blanca"
+    },
+    {
+        "name": "Kit De Alarma Smart Tuya Wifi",
+        "image": "src/assets/images/products/kit-alarma-tuya-wifi.jpg",
+        "description": "Sistema de seguridad inteligente compatible con Alexa y Google Home. Incluye panel, pir y controles.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "smart",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Kit Alarma Tuya Wifi"
+    },
+    {
+        "name": "Pilas Varta Aaa Alcalinas X2",
+        "image": "src/assets/images/products/pilas-varta-aaa-alcalinas.jpg",
+        "description": "Pack de 2 pilas alcalinas AAA (Dura Más). Calidad alemana para dispositivos de uso diario.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas AAA Alcalinas"
+    },
+    {
+        "name": "Extensor Hdmi Rj45 Compacto Azul",
+        "image": "src/assets/images/products/extensor-hdmi-rj45-azul-v2.jpg",
+        "description": "Adaptadores ultra compactos TX/RX para extender HDMI sobre cable Cat6. Sin fuente de poder externa.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI Compacto"
+    },
+    {
+        "name": "Soporte Tv Nia 14\"-55\" Full Motion",
+        "image": "src/assets/images/products/soporte-tv-nia-14-55.jpg",
+        "description": "Soporte articulado de acero para televisores LED/LCD. Brazo extensible y giro suave.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte TV Nia"
+    },
+    {
+        "name": "Acople Hembra Rj45 UnióN Lan",
+        "image": "src/assets/images/products/acople-rj45-hembra.jpg",
+        "description": "Extiende tus cables de red sin necesidad de ponchado. Unión estable y blindada.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Acople RJ45 Hembra"
+    },
+    {
+        "name": "Soporte Tv Brazo Largo Reforzado",
+        "image": "src/assets/images/products/soporte-tv-brazo-extended.jpg",
+        "description": "Soporte de alta capacidad con brazo oscilante de largo alcance para pantallas grandes.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte TV Brazo Largo"
+    },
+    {
+        "name": "Pila Varta D Grande Alcalina",
+        "image": "src/assets/images/products/pila-varta-d-alcalina.jpg",
+        "description": "Pila alcalina tamaño D (LR20). Ideal para calentadores a gas, linternas y radios grandes.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Pila Varta D"
+    },
+    {
+        "name": "Soporte Tv Articulado Pro-Control",
+        "image": "src/assets/images/products/soporte-tv-brazo-articulado.jpg",
+        "description": "Inclinación y rotación total para el ángulo de visión perfecto. Diseño robusto de doble brazo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte TV Articulado"
+    },
+    {
+        "name": "Disco Duro Wd Green 1.0tb Sata",
+        "image": "src/assets/images/products/disco-duro-wd-green-1tb.jpg",
+        "description": "Disco de alta eficiencia energética para PC o DVR. 64MB Cache, confiabilidad Western Digital.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Disco Duro WD Green 1TB"
+    },
+    {
+        "name": "Bornera Dc Macho Pro-Connect",
+        "image": "src/assets/images/products/bornera-dc-macho.jpg",
+        "description": "Conector de alimentación con bornera para Cámaras de seguridad. Conexión rápida por tornillo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Borneras DC"
+    },
+    {
+        "name": "Soporte Tv Fijo Perfil Bajo",
+        "image": "src/assets/images/products/soporte-tv-fijo.jpg",
+        "description": "Soporte ultra-delgado que deja la TV pegada a la pared para un acabado minimalista. Inclinable.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte TV Fijo"
+    },
+    {
+        "name": "Pilas Varta Aaa Recargables Green",
+        "image": "src/assets/images/products/pilas-varta-aaa-recargables-green.jpg",
+        "description": "Edición especial recargable de alta capacidad. Listas para usar en dispositivos de alto consumo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en las Pilas AAA Recargables Green"
+    },
+    {
+        "name": "Extensor Vga 60m Sobre Cat5e/6 V2",
+        "image": "src/assets/images/products/extensor-vga-rj45-60m-v2.jpg",
+        "description": "Lleva tu señal VGA hasta 60 metros con cable de red. Ideal para monitoreo remoto de DVR.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor VGA 60M V2"
+    },
+    {
+        "name": "Acople Hembra-Hembra Rj45 Beige",
+        "image": "src/assets/images/products/acople-rj45-beige.jpg",
+        "description": "Unión clásica para cables ethernet. Conexión segura y duradera para extensiones de red.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Acople RJ45 Beige"
+    },
+    {
+        "name": "Adaptador Usb-C A Rj45 Gigabit",
+        "image": "src/assets/images/products/adaptador-usbc-rj45-gigabit.jpg",
+        "description": "Convierte tu puerto USB-C en una entrada de red Gigabit 10/100/1000 Mbps. Alta velocidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador USB-C a RJ45"
+    },
+    {
+        "name": "Intercomunicador Bluetooth Para Casco",
+        "image": "src/assets/images/products/intercom-casco-moto.jpg",
+        "description": "Sistema de comunicación para motociclistas. Manos libres y conexión estable en ruta.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Intercomunicador de Casco"
+    },
+    {
+        "name": "Splitter Hdmi 1x2 V2 Pro",
+        "image": "src/assets/images/products/splitter-hdmi-1x2-v2.jpg",
+        "description": "Nueva versión del divisor HDMI 1 entrada 2 salidas. Mejor disipación de calor y estabilidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Splitter HDMI 1x2 V2"
+    },
+    {
+        "name": "Duplicador Rj45 T-Bridge Beige",
+        "image": "src/assets/images/products/duplicador-rj45-t-beige.jpg",
+        "description": "Permite conectar dos cables de red a un solo puerto (uso no simultáneo o por pares).",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Duplicador RJ45 Beige"
+    },
+    {
+        "name": "Extensor Hdmi 4k 120m V2 Pro",
+        "image": "src/assets/images/products/extensor-hdmi-4k-120m-v2.jpg",
+        "description": "Versión mejorada del extensor 4K a 120 metros. Soporta señales de video ultra nítidas.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI 4K V2"
+    },
+    {
+        "name": "Extensor Hdmi Rj45 Mini Azul V3",
+        "image": "src/assets/images/products/extensor-hdmi-rj45-azul-v3.jpg",
+        "description": "Ultra compacto, se conecta directamente al puerto HDMI. Transmisión estable por Cat6.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI Mini V3"
+    },
+    {
+        "name": "Intercomunicador Casco Moto V2 Duo",
+        "image": "src/assets/images/products/intercom-casco-moto-v2.jpg",
+        "description": "Kit de comunicación avanzado con cancelación de ruido y largo alcance bluetooth.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Intercomunicador V2"
+    },
+    {
+        "name": "Extensor Hdmi 50m Basic V2",
+        "image": "src/assets/images/products/extensor-hdmi-50m-basic-v2.jpg",
+        "description": "Extensión económica 1080p hasta 50 metros. Mejorado para cables de red genéricos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI 50M V2"
+    },
+    {
+        "name": "Teclado Flexible Usb SilicóN",
+        "image": "src/assets/images/products/teclado-flexible-usb.jpg",
+        "description": "Teclado impermeable y enrollable de silicona. Silencioso y portátil, ideal para locales.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Teclado Flexible USB"
+    },
+    {
+        "name": "SeñAl Cctv Informativa Amarilla",
+        "image": "src/assets/images/products/senal-seguridad-cctv.jpg",
+        "description": "Señalética obligatoria: 'Usted está siendo grabado'. Alta visibilidad en amarillo/negro.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Señal de CCTV"
+    },
+    {
+        "name": "Soporte De Escritorio Para Celulares",
+        "image": "src/assets/images/products/soporte-escritorio-celular.jpg",
+        "description": "Base estable de aluminio para smartphones y tablets. Ajustable y antideslizante.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte de Escritorio"
+    },
+    {
+        "name": "Teclado Flexible Pro-Silicone V2",
+        "image": "src/assets/images/products/teclado-flexible-v2.jpg",
+        "description": "Nueva versión más resistente del teclado de silicona. Tacto suave y respuesta rápida.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Teclado Flexible V2"
+    },
+    {
+        "name": "Pesola Digital De Gancho Smile",
+        "image": "src/assets/images/products/pesola-digital-gancho.jpg",
+        "description": "Báscula digital portátil con gancho de acero. Pantalla LCD iluminada, soporta hasta 50kg.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Pesola Digital"
+    },
+    {
+        "name": "Soporte Robotizado 360 Tracking",
+        "image": "src/assets/images/products/robot-soporte-seguimiento.jpg",
+        "description": "Soporte para celular con seguimiento facial automático. Rotación 360 grados por IA.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte Robotizado"
+    },
+    {
+        "name": "Extensor Hdmi Rj45 Mini Azul V4",
+        "image": "src/assets/images/products/extensor-hdmi-rj45-azul-v4.jpg",
+        "description": "Versión compacta optimizada para cables Cat5e. Plug install instantáneo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Extensor HDMI Mini V4"
+    },
+    {
+        "name": "Adaptador Usb 3.0 A Rj45 Gigabit",
+        "image": "src/assets/images/products/adaptador-usb3-rj45-gigabit.jpg",
+        "description": "Conectividad de red de alta velocidad para puertos USB 3.0 estándar. Chipset Realtek.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Adaptador USB 3.0 a RJ45"
+    },
+    {
+        "name": "Splitter Hdmi 1x4 Lexa Pro",
+        "image": "src/assets/images/products/splitter-hdmi-1x4-lexa.jpg",
+        "description": "Distribuidor profesional Lexa 1 entrada a 4 salidas. Soporta Full HD 1080p continuo.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Splitter HDMI 1x4 Lexa"
+    },
+    {
+        "name": "Soporte De Escritorio Celular V2",
+        "image": "src/assets/images/products/soporte-escritorio-celular-v2.jpg",
+        "description": "Base premium para dispositivos móviles. Diseño minimalista y gran estabilidad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte de Escritorio V2"
+    },
+    {
+        "name": "Splitter Hdmi 1x4 Compact Pro",
+        "image": "src/assets/images/products/splitter-hdmi-1x4-compact.jpg",
+        "description": "Divisor de señal HDMI 1 a 4. Versión compacta con indicadores LED de actividad.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Splitter HDMI 1x4 Compact"
+    },
+    {
+        "name": "Soporte Robot Smart Tracking 360",
+        "image": "src/assets/images/products/robot-soporte-seguimiento-infographic.jpg",
+        "description": "Base inteligente con rotación automática para creación de contenido y vlogs.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Soporte Robot Smart"
+    },
+    {
+        "name": "MicróFono Externo Alta Ganancia Cctv",
+        "image": "src/assets/images/products/microfono-externo-cctv.jpg",
+        "description": "Micrófono de alta sensibilidad para sistemas de vigilancia. Conexión RCA fácil.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Micrófono Externo CCTV"
+    },
+    {
+        "name": "Cargador Samsung 38w 7a Fast Charge",
+        "image": "src/assets/images/products/cargador-samsung-38w-7a.jpg",
+        "description": "Adaptador de pared de carga ultra rápida. Chip inteligente para protección de batería.",
+        "category": "accesorios",
+        "brand": "samsung",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Cargador Samsung 38W"
+    },
+    {
+        "name": "Conversor Av Rca A Hdmi Blanco",
+        "image": "src/assets/images/products/conversor-av-hdmi-blanco.jpg",
+        "description": "Pasa tus dispositivos antiguos (RCA) a pantallas modernas (HDMI). Resolución 1080p.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Conversor AV a HDMI"
+    },
+    {
+        "name": "Conversor Av A Hdmi Up-Scaler",
+        "image": "src/assets/images/products/conversor-av-hdmi-v2.jpg",
+        "description": "Transforma señal análoga a digital con mejora de imagen. Ideal para consolas y DVR antiguos.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Conversor AV HDMI V2"
+    },
+    {
+        "name": "Splitter Vga 1x2 Trautech Pro",
+        "image": "src/assets/images/products/splitter-vga-1x2-trautech.jpg",
+        "description": "Duplicador de señal VGA profesional. Mantiene la nitidez en dos monitores.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Splitter VGA TrauTech"
+    },
+    {
+        "name": "AudíFonos Bt In-Ear White Edition",
+        "image": "src/assets/images/products/audifonos-bt-in-ear-white.jpg",
+        "description": "Auriculares inalámbricos ergonómicos. Sonido balanceado y estuche de carga.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Audífonos BT White"
+    },
+    {
+        "name": "AudíFonos Redmi Airdots Pro Black",
+        "image": "src/assets/images/products/audifonos-redmi-airdots-pro.jpg",
+        "description": "Versión Pro de los famosos AirDots. Mejor respuesta de bajos y mayor autonomía.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Redmi AirDots Pro"
+    },
+    {
+        "name": "Mini CáMara EspíA Wifi A9",
+        "image": "src/assets/images/products/mini-camara-espia-wifi-a9.jpg",
+        "description": "Cámara oculta ultra pequeña con visión nocturna y conexión remota por APP.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Mini Cámara A9"
+    },
+    {
+        "name": "Mini CáMara EspíA Ultra Plana",
+        "image": "src/assets/images/products/mini-camara-espia-plana.jpg",
+        "description": "Versión plana para ocultar en espacios reducidos. Grabación discreta en alta definición.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Mini Cámara Plana"
+    },
+    {
+        "name": "Thermal Pad High Conductivity",
+        "image": "src/assets/images/products/thermal-pad-high-conductivity.jpg",
+        "description": "Almohadilla térmica profesional para componentes electrónicos. Mejora la refrigeración.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Thermal Pad"
+    },
+    {
+        "name": "Disco Ssd Kingston A400 240gb",
+        "image": "src/assets/images/products/disco-ssd-kingston-240gb.jpg",
+        "description": "Aumenta la velocidad de tu equipo o grabador con almacenamiento sólido Kingston.",
+        "category": "accesorios",
+        "brand": "kingston",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el SSD Kingston 240GB"
+    },
+    {
+        "name": "Mini CáMara EspíA MóDulo Pinhole",
+        "image": "src/assets/images/products/mini-camara-espia-pinhole.jpg",
+        "description": "Lente minúsculo con cable flexible. Diseñada para proyectos de seguridad mimetizada.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Pinhole"
+    },
+    {
+        "name": "CáMara EspíA Oculta En Sensor Humo",
+        "image": "src/assets/images/products/camara-espia-sensor-humo.jpg",
+        "description": "Disfrazada de sensor de incendio. Vigilancia panorámica totalmente indetectable.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Cámara Sensor Humo"
+    },
+    {
+        "name": "Webcam Logitech C920s Pro Hd",
+        "image": "src/assets/images/products/webcam-logitech-c920s.jpg",
+        "description": "La Cámara preferida para streaming y videollamadas. Resolución 1080p con tapa de privacidad.",
+        "category": "accesorios",
+        "brand": "logitech",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Webcam Logitech C920s"
+    },
+    {
+        "name": "AudíFonos Lightning Para Iphone Pro",
+        "image": "src/assets/images/products/audifonos-lightning-iphone.jpg",
+        "description": "Conexión directa Lightning para iPhone. Micrófono incorporado y control de volumen.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en los Audífonos Lightning"
+    },
+    {
+        "name": "Mini CáMara EspíA Wifi V2 Base",
+        "image": "src/assets/images/products/mini-camara-espia-wifi-v2.jpg",
+        "description": "Incluye soporte magnético ajustable. Detección de movimiento y alertas al celular.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "ip",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en la Mini Cámara V2"
+    },
+    {
+        "name": "Headset Bt Manos Libres Pro",
+        "image": "src/assets/images/products/headset-bt-manos-libres.jpg",
+        "description": "Audífono mono-aural para conductores. Cómodo, ligero y con batería de larga duración.",
+        "category": "accesorios",
+        "brand": "other",
+        "tech": "other",
+        "whatsappMessage": "Hola CCTV OFERTAS, estoy interesado en el Manos Libres BT"
+    }
+]

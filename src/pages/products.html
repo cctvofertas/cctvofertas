@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos | CCTV OFERTAS</title>
+    <meta name="description" content="Explora nuestro catálogo completo de cámaras de seguridad, kits de vigilancia, NVR y soluciones smart home. Tecnología de vanguardia para tu seguridad.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body class="tech-theme">
+    <canvas id="security-grid-canvas" class="bg-canvas"></canvas>
+    
+    <!-- Dynamic Header -->
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="section" style="padding-top: 160px; padding-bottom: 60px; background: linear-gradient(to bottom, var(--navy-darker), transparent);">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-eyebrow">EQUIPAMIENTO PROFESIONAL</span>
+                    <h1 class="section-title">Nuestra <span class="text-gradient">Tecnología</span></h1>
+                    <p class="text-slate" style="max-width: 600px; margin-bottom: 2.5rem;">Explora sistemas de vigilancia de grado industrial con analítica de video avanzada y soporte PoE.</p>
+                    
+                    <div class="search-refinement-grid" style="display: flex; gap: 20px; align-items: stretch; flex-wrap: wrap;">
+                        <div class="glass search-box" style="padding: 5px 20px; display: flex; align-items: center; gap: 15px; border-radius: 100px; flex-grow: 1; max-width: 600px;">
+                            <i class="fas fa-search" style="color: var(--accent-electric);"></i>
+                            <input type="search" id="product-search" placeholder="Buscar por nombre o marca..." aria-label="Buscar productos"
+                                style="background: none; border: none; color: white; padding: 12px 0; width: 100%; outline: none; font-family: var(--font-body);">
+                        </div>
+                        <button id="reset-filters" class="btn btn-secondary" style="height: auto; padding: 0 25px; border-radius: 100px; font-size: 0.8rem; text-transform: uppercase;">
+                            <i class="fas fa-undo"></i> Limpiar filtros
+                        </button>
+                        <div id="pagination-container-top" class="pagination-container reveal" style="margin: 0; align-self: center;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalogs Section -->
+        <section class="section" id="catalogs-section" style="padding-top: 0; padding-bottom: 40px;">
+            <div class="container reveal">
+                <div class="glass" style="padding: 40px; border-radius: 20px; text-align: center;">
+                    <h2 class="section-title" style="margin-bottom: 10px; font-size: 2rem;">Descarga Nuestros <span class="text-gradient">Catálogos</span></h2>
+                    <p class="text-slate" style="margin-bottom: 30px;">Encuentra información detallada sobre todos nuestros productos y soluciones.</p>
+                    <div id="catalogs-grid" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <i class="fas fa-circle-notch fa-spin" style="color: var(--accent-electric);"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Explorer -->
+        <section class="section" style="padding-top: 20px;">
+            <div class="container grid explorer-grid" style="grid-template-columns: 280px 1fr; align-items: start;">
+                <!-- Sidebar Filters -->
+                <aside class="glass sidebar">
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">CATEGORÍAS</h3>
+                        <ul class="filter-list" data-filter-type="category">
+                            <li class="active" data-filter="all">Todas</li>
+                            <li data-filter="cameras">Cámaras de Seguridad</li>
+                            <li data-filter="kits">Kits de Vigilancia</li>
+                            <li data-filter="recorders">NVR / Digitales</li>
+                            <li data-filter="smarthome">Smart Home</li>
+                            <li data-filter="accessories">Accesorios</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">MARCA</h3>
+                        <ul class="filter-list" data-filter-type="brand">
+                            <li class="active" data-filter="all">Todas</li>
+                            <li data-filter="hikvision">Hikvision</li>
+                            <li data-filter="ezviz">Ezviz</li>
+                            <li data-filter="tenda">Tenda</li>
+                            <li data-filter="imou">Imou</li>
+                            <li data-filter="uniview">Uniview</li>
+                            <li data-filter="other">Otras marcas</li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">TECNOLOGÍA</h3>
+                        <ul class="filter-list" data-filter-type="tech">
+                            <li class="active" data-filter="all">Todas</li>
+                            <li data-filter="ip">IP Digital</li>
+                            <li data-filter="analoga">Análogo</li>
+                            <li data-filter="wifi">Wi-Fi</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Results Area -->
+                <div class="product-results">
+                    <div class="product-grid" id="product-container">
+                        <div class="glass" style="grid-column: 1/-1; padding: 100px; text-align: center;">
+                            <i class="fas fa-circle-notch fa-spin" style="font-size: 2rem; color: var(--accent-electric);"></i>
+                            <p style="margin-top: 20px;">Cargando inventario...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination Controls -->
+                    <div id="pagination-container" class="pagination-container reveal"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Floating icon -->
+    <a href="https://wa.me/573014924988" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Dynamic Footer -->
+    <footer id="site-footer"></footer>
+
+    <!-- Scripts -->
+    <script type="module" src="../scripts/layout.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
+    <script type="module" src="../scripts/products.js"></script>
+    <script type="module" src="../scripts/catalogs.js"></script>
+</body>
+</html>

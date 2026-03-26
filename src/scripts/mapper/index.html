@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Ofertas - Image Mapper Tool</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; display: flex; height: 100vh; background: #1e1e2e; color: #fff; }
+        .col { display: flex; flex-direction: column; overflow: hidden; padding: 15px; border-right: 1px solid #333; }
+        .col-products { width: 350px; background: #252538; }
+        .col-group { width: 300px; background: #2d2d44; }
+        .col-images { flex: 1; background: #1e1e2e; }
+        
+        .header { font-size: 1.2rem; font-weight: bold; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #444; }
+        .list-container { flex: 1; overflow-y: auto; }
+        
+        .product-item { padding: 10px; border-radius: 6px; cursor: pointer; margin-bottom: 5px; transition: background 0.2s; border: 1px solid transparent; }
+        .product-item:hover { background: #3a3a5a; }
+        .product-item.active { background: #5d5dff; color: white; border-color: #7b7bff; }
+        .product-item.mapped { opacity: 0.5; }
+        .product-item .small { font-size: 0.75rem; color: #aaa; margin-top: 4px; }
+        .product-item.active .small { color: #ddd; }
+
+        .group-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px; background: #3a3a5a; margin-bottom: 5px; border-radius: 6px; cursor: pointer;}
+        .group-item input { margin-top: 3px; cursor: pointer;}
+        
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+        .image-card { background: #252538; border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.1s, border 0.1s; border: 2px solid transparent;}
+        .image-card:hover { transform: scale(1.05); border-color: #5d5dff; }
+        .image-card img { width: 100%; height: 150px; object-fit: cover; display: block; }
+        .image-card .label { padding: 5px; font-size: 0.7rem; text-align: center; word-break: break-all;}
+
+        .preview-box { margin-bottom: 20px; padding: 15px; background: #1e1e2e; border-radius: 8px; border: 1px solid #444; }
+        .preview-box img { max-width: 100%; max-height: 200px; border-radius: 6px; margin-top: 10px; object-fit: contain; }
+
+        .btn { background: #5d5dff; color: white; border: none; padding: 10px 15px; border-radius: 6px; cursor: pointer; font-size: 1rem; width: 100%; margin-top: 10px; }
+        .btn:hover { background: #4a4acc; }
+        .btn:disabled { background: #444; color: #888; cursor: not-allowed; }
+
+        .badge { background: #444; padding: 2px 6px; border-radius: 10px; font-size: 0.7rem; float: right; }
+        .mapped-badge { background: #28a745; }
+        
+        #toast { position: fixed; bottom: 20px; right: 20px; background: #28a745; color: white; padding: 10px 20px; border-radius: 6px; display: none; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        
+        .filters { margin-bottom: 10px; }
+        .filters input { width: 100%; background: #1e1e2e; border: 1px solid #444; color: white; padding: 8px; border-radius: 4px; box-sizing: border-box; }
+        
+        /* Keyboard hints */
+        .key-hint { font-size: 0.8rem; color: #888; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="col col-products">
+        <div class="header">
+            Productos <span id="product-count" class="badge">0</span>
+        </div>
+        <div class="filters">
+            <input type="text" id="search-product" placeholder="Buscar producto...">
+            <label style="font-size: 0.8rem; display: flex; align-items: center; gap: 5px; margin-top: 8px; cursor: pointer;">
+                <input type="checkbox" id="hide-mapped"> Ocultar ya mapeados
+            </label>
+        </div>
+        <div class="list-container" id="product-list">
+            <!-- Products loaded here -->
+        </div>
+    </div>
+
+    <div class="col col-group">
+        <div class="header">Active Product Preview</div>
+        <div id="active-preview" class="preview-box">
+            <div style="color: #888; font-style: italic;">Selecciona un producto a la izquierda</div>
+        </div>
+
+        <div class="header" style="margin-top: 10px;">
+            Agrupación Inteligente <span id="group-count" class="badge text-bg-secondary">0</span>
+        </div>
+        <p style="font-size: 0.8rem; color: #aaa; margin-bottom: 10px;">Selecciona productos similares para asignarles la misma imagen.</p>
+        <div class="list-container" id="group-list" style="margin-bottom: 10px;">
+            <!-- Similar products loaded here -->
+        </div>
+        
+        <div class="key-hint">
+            <b>Atajos de teclado:</b><br><br>
+            <kbd>↑</kbd> <kbd>↓</kbd> Navegar productos<br>
+            <kbd>Enter</kbd> Confirmar asignación (al clicar imagen)<br>
+            <kbd>Esc</kbd> Limpiar selección
+        </div>
+    </div>
+
+    <div class="col col-images">
+        <div class="header">
+            Biblioteca de Imágenes (${temp_uploads})
+            <span id="image-count" class="badge">0</span>
+        </div>
+        <div class="filters" style="display: flex; gap: 10px;">
+            <input type="text" id="search-image" placeholder="Filtrar por nombre (ej. WA023)..." style="flex: 1;">
+            <button class="btn" style="width: auto; margin-top: 0; padding: 8px 15px;" id="refresh-btn">Refrescar DB</button>
+        </div>
+        <div class="list-container">
+            <div class="image-grid" id="image-grid">
+                <!-- Images loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="toast">✅ Imagen asignada con éxito</div>
+
+    <script>
+        let products = [];
+        let images = [];
+        let activeProduct = null;
+        let selectedGroupIds = new Set();
+        
+        const DOM = {
+            productList: document.getElementById('product-list'),
+            groupList: document.getElementById('group-list'),
+            imageGrid: document.getElementById('image-grid'),
+            activePreview: document.getElementById('active-preview'),
+            searchProduct: document.getElementById('search-product'),
+            hideMapped: document.getElementById('hide-mapped'),
+            searchImage: document.getElementById('search-image'),
+            productCount: document.getElementById('product-count'),
+            groupCount: document.getElementById('group-count'),
+            imageCount: document.getElementById('image-count'),
+            toast: document.getElementById('toast'),
+            refreshBtn: document.getElementById('refresh-btn')
+        };
+
+        async function loadData() {
+            try {
+                const res = await fetch('/api/data');
+                const data = await res.json();
+                products = data.products || [];
+                images = data.images || [];
+                
+                DOM.imageCount.textContent = images.length;
+                renderProducts();
+                renderImages();
+            } catch (err) {
+                console.error("Error loading data", err);
+                alert("Error conectando con el servidor local.");
+            }
+        }
+
+        function extractKeywords(name) {
+            const normalized = name.toLowerCase().replace(/[^a-z0-9\s]/g, '');
+            // Extraer palabras clave como '1tb', 'bala', 'dvr', 'nvr', 'dahua', 'hikvision'
+            const parts = normalized.split(/\s+/).filter(w => w.length > 2);
+            // Tomamos las primeras 3 palabras importantes
+            return parts.slice(0, 3);
+        }
+
+        function findSimilarProducts(targetName) {
+            const kws = extractKeywords(targetName);
+            if (kws.length === 0) return [];
+            
+            return products.filter(p => {
+                if (p.name === targetName) return false; // no a sí mismo
+                const pNorm = p.name.toLowerCase();
+                // Si comparte al menos 2 palabras clave
+                let matches = 0;
+                for (const kw of kws) {
+                    if (pNorm.includes(kw)) matches++;
+                }
+                return matches >= 2;
+            });
+        }
+
+        function renderProducts() {
+            DOM.productList.innerHTML = '';
+            const search = DOM.searchProduct.value.toLowerCase();
+            const hideMapped = DOM.hideMapped.checked;
+            
+            let filtered = products;
+            
+            if (hideMapped) {
+                filtered = filtered.filter(p => !p.image || p.image.includes('fallback') || p.image.trim() === '');
+            }
+            if (search) {
+                filtered = filtered.filter(p => p.name.toLowerCase().includes(search) || (p.category && p.category.toLowerCase().includes(search)));
+            }
+
+            DOM.productCount.textContent = filtered.length;
+
+            filtered.forEach((p, idx) => {
+                const div = document.createElement('div');
+                const isMapped = p.image && !p.image.includes('fallback') && p.image.trim() !== '';
+                
+                div.className = `product-item ${isMapped ? 'mapped' : ''} ${activeProduct && activeProduct.name === p.name ? 'active' : ''}`;
+                div.innerHTML = `
+                    <div style="font-weight: 600;">${p.name} ${isMapped ? '<span class="badge mapped-badge">Mapeado</span>' : ''}</div>
+                    <div class="small">${p.category || 'Sin categoría'}</div>
+                `;
+                
+                div.onclick = () => selectProduct(p);
+                DOM.productList.appendChild(div);
+            });
+        }
+
+        function selectProduct(p) {
+            activeProduct = p;
+            selectedGroupIds = new Set([p.name]); 
+            renderProducts();
+            renderActivePreview();
+            renderSimilarGroup();
+        }
+
+        function toggleGroupSelect(name) {
+            if (selectedGroupIds.has(name)) {
+                selectedGroupIds.delete(name);
+            } else {
+                selectedGroupIds.add(name);
+            }
+            DOM.groupCount.textContent = selectedGroupIds.size;
+        }
+
+        function renderSimilarGroup() {
+            if (!activeProduct) {
+                DOM.groupList.innerHTML = '';
+                DOM.groupCount.textContent = 0;
+                return;
+            }
+
+            const similar = findSimilarProducts(activeProduct.name);
+            DOM.groupList.innerHTML = '';
+            
+            similar.forEach(p => {
+                const isMapped = p.image && !p.image.includes('fallback') && p.image.trim() !== '';
+                const div = document.createElement('label');
+                div.className = 'group-item';
+                div.innerHTML = `
+                    <input type="checkbox" ${isMapped ? '' : 'checked'}>
+                    <div style="flex:1;">
+                        <div style="font-size:0.9rem; font-weight:600; color: ${isMapped ? '#aaa' : '#fff'};">${p.name}</div>
+                        ${isMapped ? `<div style="font-size:0.7rem; color:#888;">Ya tiene imagen (${p.image.split(/[\\/]/).pop()})</div>` : ''}
+                    </div>
+                `;
+                
+                const cb = div.querySelector('input');
+                if (!isMapped) selectedGroupIds.add(p.name);
+                
+                cb.onchange = (e) => {
+                    toggleGroupSelect(p.name);
+                };
+                
+                DOM.groupList.appendChild(div);
+            });
+
+            DOM.groupCount.textContent = selectedGroupIds.size;
+        }
+
+        function renderActivePreview() {
+            if (!activeProduct) {
+                DOM.activePreview.innerHTML = '<div style="color: #888; font-style: italic;">Selecciona un producto a la izquierda</div>';
+                return;
+            }
+            
+            let imgHtml = '';
+            if (activeProduct.image) {
+                const imgSrc = `/${activeProduct.image.replace(/\\/g, '/')}`;
+                imgHtml = `<img src="${imgSrc}" onerror="this.src=''" alt="Preview" />`;
+            } else {
+                imgHtml = `<div style="padding: 20px; text-align:center; background:#111; color:#888; margin-top:10px; border-radius:6px;">Sin imagen</div>`;
+            }
+
+            DOM.activePreview.innerHTML = `
+                <div style="font-weight: bold; font-size:1.1rem; color: #5d5dff; margin-bottom:5px;">${activeProduct.name}</div>
+                <div style="font-size: 0.8rem; color: #aaa; margin-bottom:10px;">${activeProduct.category}</div>
+                <hr style="border:none; border-top:1px solid #444; margin-bottom:10px;" />
+                Imagen Actual (Ruta): <br>
+                <code style="font-size:0.7rem; color:#ffa; word-break:break-all;">${activeProduct.image || 'N/A'}</code>
+                ${imgHtml}
+            `;
+        }
+
+        function renderImages() {
+            DOM.imageGrid.innerHTML = '';
+            const search = DOM.searchImage.value.toLowerCase();
+            
+            let filtered = images;
+            if (search) {
+                filtered = images.filter(img => img.toLowerCase().includes(search));
+            }
+
+            filtered.forEach(img => {
+                const div = document.createElement('div');
+                div.className = 'image-card';
+                div.innerHTML = `
+                    <img src="/src/assets/temp_uploads/${img}" loading="lazy" />
+                    <div class="label">${img}</div>
+                `;
+                
+                div.onclick = () => assignImage(img);
+                DOM.imageGrid.appendChild(div);
+            });
+        }
+
+        async function assignImage(imgName) {
+            if (!activeProduct) {
+                alert("Primero selecciona un producto a la izquierda para mapear.");
+                return;
+            }
+            if (selectedGroupIds.size === 0) return;
+
+            try {
+                const targetIds = Array.from(selectedGroupIds);
+                const res = await fetch('/api/save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        productId: targetIds,
+                        newImage: imgName
+                    })
+                });
+
+                if (!res.ok) throw new Error("Server response not ok");
+
+                // update local state
+                targetIds.forEach(tId => {
+                    const idx = products.findIndex(p => p.name === tId);
+                    if (idx > -1) {
+                        products[idx].image = `src/assets/temp_uploads/${imgName}`;
+                    }
+                });
+
+                showToast(`Asignada imagen a ${targetIds.length} producto(s)`);
+                
+                // Select internal next
+                const currentIdx = products.findIndex(p => p.name === activeProduct.name);
+                if (currentIdx > -1 && currentIdx < products.length - 1) {
+                    // find next unmapped
+                    let nextUnmapped = products.findIndex((p, i) => i > currentIdx && (!p.image || p.image.includes('fallback')));
+                    if (nextUnmapped > -1) {
+                        selectProduct(products[nextUnmapped]);
+                    } else {
+                        selectProduct(products[currentIdx + 1]);
+                    }
+                } else {
+                    renderProducts();
+                    renderActivePreview();
+                }
+
+            } catch (err) {
+                console.error(err);
+                alert("Error al guardar.");
+            }
+        }
+
+        function showToast(msg) {
+            DOM.toast.textContent = msg;
+            DOM.toast.style.display = 'block';
+            setTimeout(() => {
+                DOM.toast.style.display = 'none';
+            }, 3000);
+        }
+
+        // Search Handlers
+        DOM.searchProduct.addEventListener('input', renderProducts);
+        DOM.hideMapped.addEventListener('change', renderProducts);
+        DOM.searchImage.addEventListener('input', renderImages);
+        DOM.refreshBtn.addEventListener('click', loadData);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT') return;
+            
+            // Down Arrow
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                if (!activeProduct && products.length > 0) return selectProduct(products[0]);
+                const idx = products.findIndex(p => p.name === activeProduct.name);
+                if (idx < products.length - 1) selectProduct(products[idx + 1]);
+            }
+            // Up Arrow
+            if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                if (!activeProduct) return;
+                const idx = products.findIndex(p => p.name === activeProduct.name);
+                if (idx > 0) selectProduct(products[idx - 1]);
+            }
+            // Esc
+            if (e.key === 'Escape') {
+                activeProduct = null;
+                selectedGroupIds.clear();
+                renderProducts();
+                renderActivePreview();
+                renderSimilarGroup();
+            }
+        });
+
+        // INIT
+        loadData();
+    </script>
+</body>
+</html>

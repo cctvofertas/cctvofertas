@@ -1,0 +1,20 @@
+[
+    {
+        "id": "cat-2026-cctv",
+        "title": "Catálogo CCTV 2026",
+        "description": "Equipos de videovigilancia, cámaras y grabadores profesionales.",
+        "file": "catalogo_cctv.pdf"
+    },
+    {
+        "id": "cat-2026-smarthome",
+        "title": "Catálogo Smart Home",
+        "description": "Soluciones inteligentes para el hogar, cerraduras y automatización.",
+        "file": "catalogo_smarthome.pdf"
+    },
+    {
+        "id": "cat-2026-redes",
+        "title": "Catálogo Redes & Networking",
+        "description": "Cableado estructurado, switches, routers y antenas wifi.",
+        "file": "catalogo_redes.pdf"
+    }
+]

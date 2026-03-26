@@ -1,0 +1,22 @@
+[
+  {
+    "id": "guia-camaras",
+    "title": "¿Cómo elegir tu primera cámara de seguridad?",
+    "category": "Guía Técnica",
+    "date": "15 Mar 2024",
+    "author": "Equipo Técnico CCTV OFERTAS",
+    "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "description": "Los 5 factores clave que debes considerar antes de comprar: resolución, infrarrojos, tipo de lente y almacenamiento.",
+    "content": "<h2>1. Definir el propósito</h2><p>No es lo mismo vigilar una caja registradora que un patio exterior. Para interiores, una cámara tipo <b>Domo</b> es discreta. Para exteriores, una tipo <b>Bala</b> es más visible y disuasiva.</p><h2>2. Resolución: No escatimes en megapíxeles</h2><p>Hoy en día, el estándar mínimo es 1080p (2MP). Sin embargo, para identificar rostros con precisión a más de 5 metros, recomendamos cámaras de <b>4MP o 6MP</b>.</p><h2>3. Visión Nocturna</h2><p>Busca tecnologías como <b>AcuSense</b> o <b>ColorVu</b> de Hikvision, que permiten ver a color incluso en oscuridad total, a diferencia del clásico blanco y negro granulado.</p>"
+  },
+  {
+    "id": "seguridad-nvr",
+    "title": "Protegiendo tu NVR de ataques externos",
+    "category": "Ciberseguridad",
+    "date": "12 Mar 2024",
+    "author": "Consultoría AI",
+    "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "description": "Pasos esenciales para asegurar tu red de cámaras y evitar que terceros accedan a tu privacidad.",
+    "content": "<h2>Privacidad en la Era Digital</h2><p>Tener tus cámaras conectadas a internet es una gran ventaja, pero si no se configura correctamente, puede ser un riesgo. Aquí te explicamos cómo blindar tu sistema.</p><h2>1. Cambiar la contraseña por defecto</h2><p>Parece obvio, pero el 70% de las intrusiones ocurren porque el usuario mantuvo 'admin/admin' o '12345'. Usa contraseñas alfanuméricas complejas.</p><h2>2. Desactivar el protocolo UPnP</h2><p>El sistema UPnP abre puertos automáticamente en tu router. Es más seguro configurar el acceso vía <b>P2P (nube)</b> que los fabricantes certificados ofrecen.</p><h2>3. Cifrado de flujo</h2><p>Asegúrate de que la transmisión de video esté cifrada con protocolos TLS/SSL para que la señal no pueda ser interceptada en tránsito.</p>"
+  }
+]
