@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="src/styles/global.css">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.91/build/spline-viewer.js"></script>
 </head>
 <body class="tech-theme">
     <canvas id="security-grid-canvas" class="bg-canvas"></canvas>
@@ -35,7 +34,38 @@
                     </div>
                 </div>
                 <div class="hero__3d-container reveal">
-                    <spline-viewer url="https://prod.spline.design/Fmi2PFgLHgPouF6f/scene.splinecode" loading-anim-type="spinner"></spline-viewer>
+                    <div class="hero-visual-composition">
+                        <!-- Glow Effects behind -->
+                        <div class="hero-glow hero-glow-1"></div>
+                        <div class="hero-glow hero-glow-2"></div>
+                        
+                        <img src="src/assets/images/hero_camera.png" alt="Cámara de Seguridad IA de alta gama" class="hero-main-img float-animation">
+                        
+                        <!-- Floating Glass Cards -->
+                        <div class="glass floating-card stat-card-1 reveal" style="transition-delay: 0.2s;">
+                            <div class="stat-icon"><i class="fas fa-microchip text-electric"></i></div>
+                            <div class="stat-info">
+                                <strong>AI Analytica</strong>
+                                <span class="text-electric">Activa</span>
+                            </div>
+                        </div>
+                        
+                        <div class="glass floating-card stat-card-2 reveal" style="transition-delay: 0.4s;">
+                            <div class="stat-icon"><i class="fas fa-shield-check text-success"></i></div>
+                            <div class="stat-info">
+                                <strong>Estado Sistema</strong>
+                                <span class="text-success">Protegido</span>
+                            </div>
+                        </div>
+
+                        <div class="glass floating-card stat-card-3 reveal" style="transition-delay: 0.6s;">
+                            <div class="stat-icon"><i class="fas fa-server text-neon"></i></div>
+                            <div class="stat-info">
+                                <strong>Uptime Red</strong>
+                                <span>99.9%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -67,25 +97,41 @@
                     <h2 class="section-title">Soluciones Especializadas</h2>
                 </div>
                 <div class="grid categories-grid">
-                    <a href="src/pages/products.html?cat=cameras" class="glass category-card reveal icon-glow">
-                        <i class="fas fa-camera-retro category-card__icon" style="margin-bottom: 20px;"></i>
-                        <h3>Cámaras AI</h3>
-                        <p>Resolución 4K, análisis térmico y domos PTZ.</p>
+                    <a href="src/pages/products.html?cat=cameras" class="glass category-card reveal">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/cat_cam_ai.png" alt="Cámaras AI" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3>Cámaras AI</h3>
+                            <p>Resolución 4K, análisis térmico y domos PTZ.</p>
+                        </div>
                     </a>
-                    <a href="src/pages/products.html?cat=kits" class="glass category-card reveal icon-glow">
-                        <i class="fas fa-cubes-stacked category-card__icon" style="margin-bottom: 20px;"></i>
-                        <h3>Kits Pro CCTV</h3>
-                        <p>Sistemas completos de red listos para instalar.</p>
+                    <a href="src/pages/products.html?cat=kits" class="glass category-card reveal">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/cat_kits.png" alt="Kits Pro CCTV" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3>Kits Pro CCTV</h3>
+                            <p>Sistemas completos de red listos para instalar.</p>
+                        </div>
                     </a>
-                    <a href="src/pages/products.html?cat=recorders" class="glass category-card reveal icon-glow">
-                        <i class="fas fa-hard-drive category-card__icon" style="margin-bottom: 20px;"></i>
-                        <h3>Grabadores NVR</h3>
-                        <p>Almacenamiento híbrido con acceso remoto.</p>
+                    <a href="src/pages/products.html?cat=recorders" class="glass category-card reveal">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/cat_nvr.png" alt="Grabadores NVR" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3>Grabadores NVR</h3>
+                            <p>Almacenamiento híbrido con acceso remoto.</p>
+                        </div>
                     </a>
-                    <a href="src/pages/products.html?cat=smarthome" class="glass category-card reveal icon-glow">
-                        <i class="fas fa-network-wired category-card__icon" style="margin-bottom: 20px;"></i>
-                        <h3>Redes & IoT</h3>
-                        <p>Switches, modems y domótica para el hogar.</p>
+                    <a href="src/pages/products.html?cat=smarthome" class="glass category-card reveal">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/cat_iot.png" alt="Redes & IoT" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3>Redes & IoT</h3>
+                            <p>Switches, modems y domótica para el hogar.</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -136,20 +182,32 @@
                     <h2>Características de Última Generación</h2>
                 </div>
                 <div class="grid features-grid">
-                    <div class="glass reveal feature-block text-center icon-glow">
-                        <div style="margin-bottom: 20px;"><i class="fas fa-moon"></i></div>
-                        <h3>Visión Nocturna ColorVu</h3>
-                        <p>Imágenes brillantes a todo color incluso en oscuridad absoluta. Nada escapa a tu control.</p>
+                    <div class="glass reveal feature-block text-center">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/feat_colorvu.png" alt="Visión Nocturna ColorVu" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3 style="font-size: 1.25rem;">Visión Nocturna ColorVu</h3>
+                            <p>Imágenes brillantes a todo color incluso en oscuridad absoluta. Nada escapa a tu control.</p>
+                        </div>
                     </div>
-                    <div class="glass reveal feature-block text-center icon-glow">
-                        <div style="margin-bottom: 20px;"><i class="fas fa-mobile-screen"></i></div>
-                        <h3>Monitoreo Omnipresente</h3>
-                        <p>Controla tus redes, cámaras y domótica directamente desde tu smartphone en todo lugar.</p>
+                    <div class="glass reveal feature-block text-center">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/feat_mobile.png" alt="Monitoreo Omnipresente" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3 style="font-size: 1.25rem;">Monitoreo Omnipresente</h3>
+                            <p>Controla tus redes, cámaras y domótica directamente desde tu smartphone en todo lugar.</p>
+                        </div>
                     </div>
-                    <div class="glass reveal feature-block text-center icon-glow">
-                        <div style="margin-bottom: 20px;"><i class="fas fa-microchip"></i></div>
-                        <h3>Inteligencia y Redes</h3>
-                        <p>Aprovechamos la Inteligencia Artificial y la mejor latencia de internet para respuestas rápidas.</p>
+                    <div class="glass reveal feature-block text-center">
+                        <div class="card-img-wrapper">
+                            <img src="src/assets/images/feat_chip.png" alt="Inteligencia y Redes" class="card-img-top">
+                        </div>
+                        <div class="card-content">
+                            <h3 style="font-size: 1.25rem;">Inteligencia y Redes</h3>
+                            <p>Aprovechamos la Inteligencia Artificial y la mejor latencia de internet para respuestas rápidas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
