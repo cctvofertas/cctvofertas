@@ -20,32 +20,87 @@
     <main>
         <section class="section" style="padding-top: 140px;">
             <div class="container">
-                <div class="reveal" style="margin-bottom: 50px;">
-                    <span class="section-eyebrow">Consejos y Guías</span>
+                <div class="reveal" style="margin-bottom: 50px; text-align: center;">
+                    <span class="section-eyebrow">Expertise Técnico</span>
                     <h1 class="section-title">Centro de <span class="text-amber">Conocimiento</span></h1>
-                    <div class="title-line" style="margin-left: 0;"></div>
+                    <p class="text-slate" style="max-width: 600px; margin: 1rem auto;">Guías, consejos y las últimas novedades en tecnología de seguridad, redes e infraestructura.</p>
                 </div>
 
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <!-- DESTACADO -->
+                <article class="glass reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; align-items: center; margin-bottom: 5rem; overflow: hidden; border: 1px solid rgba(245, 158, 11, 0.4); border-radius: var(--radius-lg);">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80" alt="Tecnología ColorHunter" style="width: 100%; height: 100%; object-fit: cover; min-height: 400px;">
+                    <div style="padding: 3rem;">
+                        <span class="text-neon" style="font-weight: bold; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 1rem; display: block;"><i class="fas fa-star"></i> ARTÍCULO DESTACADO</span>
+                        <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">La Revolución de la Visión Nocturna en Color Real</h2>
+                        <p class="text-slate" style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">Descubre cómo la tecnología ColorHunter de Uniview está cambiando las reglas del juego en la videovigilancia nocturna, permitiendo identificar rostros, placas y detalles cruciales en la oscuridad total.</p>
+                        <a href="article.html?id=vision-color-real" class="btn btn-primary" style="display: inline-flex; align-items: center;">LEER ARTÍCULO COMPLETO <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+                    </div>
+                </article>
+
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
                     <!-- Article 1 -->
-                    <article class="glass reveal" style="overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Guía técnica" style="width: 100%; height: 220px; object-fit: cover;">
-                        <div style="padding: 25px;">
-                            <span class="section-eyebrow">Guía Técnica</span>
-                            <h3 style="margin: 10px 0;">¿Cómo elegir tu primera cámara de seguridad?</h3>
-                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px;">Los 5 factores clave que debes considerar antes de comprar: resolución, infrarrojos, tipo de lente y almacenamiento.</p>
-                            <a href="article.html?id=guia-camaras" class="text-amber" style="font-weight: 700;">LEER MÁS <i class="fas fa-arrow-right"></i></a>
+                    <article class="glass reveal" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Guía técnica cámara CCTV" style="width: 100%; height: 220px; object-fit: cover;">
+                        <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span class="section-eyebrow" style="margin-bottom: 0.5rem;">CCTV</span>
+                            <h3 style="margin: 0 0 10px 0; font-size: 1.3rem;">¿Cómo elegir tu primera cámara de seguridad?</h3>
+                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Los 5 factores clave que debes considerar: resolución, tipo de lente, visión nocturna y almacenamiento.</p>
+                            <a href="article.html?id=guia-camaras" class="text-amber" style="font-weight: 700; display: inline-flex; align-items: center;">LEER MÁS <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
                         </div>
                     </article>
                     
                     <!-- Article 2 -->
-                    <article class="glass reveal" style="overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Ciberseguridad" style="width: 100%; height: 220px; object-fit: cover;">
-                        <div style="padding: 25px;">
-                            <span class="section-eyebrow">Ciberseguridad</span>
-                            <h3 style="margin: 10px 0;">Protegiendo tu NVR de ataques externos</h3>
-                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px;">Pasos esenciales para asegurar tu red de cámaras y evitar que terceros accedan a tu privacidad.</p>
-                            <a href="article.html?id=seguridad-nvr" class="text-amber" style="font-weight: 700;">LEER MÁS <i class="fas fa-arrow-right"></i></a>
+                    <article class="glass reveal" style="overflow: hidden; display: flex; flex-direction: column; transition-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Servidor NVR Ciberseguridad" style="width: 100%; height: 220px; object-fit: cover;">
+                        <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span class="section-eyebrow" style="margin-bottom: 0.5rem; color: var(--accent-neon);">CIBERSEGURIDAD</span>
+                            <h3 style="margin: 0 0 10px 0; font-size: 1.3rem;">Protegiendo tu NVR de ataques externos</h3>
+                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Pasos esenciales para asegurar tu red de cámaras, configurar contraseñas robustas y evitar accesos no autorizados.</p>
+                            <a href="article.html?id=seguridad-nvr" class="text-amber" style="font-weight: 700; display: inline-flex; align-items: center;">LEER MÁS <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="glass reveal" style="overflow: hidden; display: flex; flex-direction: column; transition-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Cables de Red Estructurada" style="width: 100%; height: 220px; object-fit: cover;">
+                        <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span class="section-eyebrow" style="margin-bottom: 0.5rem; color: var(--accent-electric);">REDES</span>
+                            <h3 style="margin: 0 0 10px 0; font-size: 1.3rem;">Importancia del Cableado Estructurado</h3>
+                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Evita cuellos de botella en tu empresa. Aprende por qué una red bien diseñada es el pilar de la productividad.</p>
+                            <a href="article.html?id=redes-estructuradas" class="text-amber" style="font-weight: 700; display: inline-flex; align-items: center;">LEER MÁS <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="glass reveal" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Pantalla Vigilancia IA" style="width: 100%; height: 220px; object-fit: cover;">
+                        <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span class="section-eyebrow" style="margin-bottom: 0.5rem; color: var(--success);">INTELIGENCIA ARTIFICIAL</span>
+                            <h3 style="margin: 0 0 10px 0; font-size: 1.3rem;">Videovigilancia Activa con IA</h3>
+                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Deja de solo grabar. Las cámaras modernas pueden disuadir intrusos con luces estroboscópicas y sirenas automáticas.</p>
+                            <a href="article.html?id=ia-analitica" class="text-amber" style="font-weight: 700; display: inline-flex; align-items: center;">LEER MÁS <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="glass reveal" style="overflow: hidden; display: flex; flex-direction: column; transition-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Mantenimiento Eléctrico" style="width: 100%; height: 220px; object-fit: cover;">
+                        <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span class="section-eyebrow" style="margin-bottom: 0.5rem; color: var(--warning);">ENERGÍA</span>
+                            <h3 style="margin: 0 0 10px 0; font-size: 1.3rem;">Mantenimiento Eléctrico Preventivo</h3>
+                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Protege tus equipos costosos (NVR, Switches, Servidores) de picos de voltaje con una instalación a tierra correcta.</p>
+                            <a href="article.html?id=mantenimiento-electrico" class="text-amber" style="font-weight: 700; display: inline-flex; align-items: center;">LEER MÁS <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 6 -->
+                    <article class="glass reveal" style="overflow: hidden; display: flex; flex-direction: column; transition-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80" alt="Técnico Instalador CCTV" style="width: 100%; height: 220px; object-fit: cover;">
+                        <div style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                            <span class="section-eyebrow" style="margin-bottom: 0.5rem;">CCTV</span>
+                            <h3 style="margin: 0 0 10px 0; font-size: 1.3rem;">¿Kits Armados o Sistemas a Medida?</h3>
+                            <p class="text-slate" style="font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Comparamos los pros y contras de comprar un Kit en caja versus diseñar un sistema de vigilancia personalizado.</p>
+                            <a href="article.html?id=kits-vs-medida" class="text-amber" style="font-weight: 700; display: inline-flex; align-items: center;">LEER MÁS <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
                         </div>
                     </article>
                 </div>

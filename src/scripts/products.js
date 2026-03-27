@@ -145,8 +145,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                         imgPath = imgPath.replace('src/assets/', '../assets/');
                     }
                     
+                    const isUniview = product.brand && product.brand.toLowerCase() === 'uniview';
+                    const specialBadge = isUniview ? 
+                        `<div class="uniview-badge-special"><i class="fas fa-star" style="color: yellow;"></i> OFERTA ESPECIAL</div>` : '';
+
                     card.innerHTML = `
                         <div class="product-card__image-wrapper">
+                            ${specialBadge}
                             <img src="${imgPath}" alt="${product.name}" class="product-card__image" loading="lazy">
                             <div class="product-card__badge" style="position: absolute; top: 1rem; right: 1rem; background: var(--accent-electric); color: white; padding: 4px 12px; border-radius: 100px; font-size: 0.65rem; font-weight: 700;">${product.category.toUpperCase()}</div>
                         </div>

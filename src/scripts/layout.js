@@ -17,6 +17,18 @@ async function injectLayout() {
     const resolvePath = (relPath) => depth + relPath;
 
     try {
+        // Inject Top Notification Bar globally
+        const topBar = document.createElement('div');
+        topBar.className = 'top-notification-bar';
+        topBar.innerHTML = `
+            <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <span class="pulse-dot"></span>
+                <p style="margin: 0; font-size: 0.82rem; font-weight: 600; color: white; letter-spacing: 0.5px; text-transform: uppercase;">🔥 Calidad profesional <strong style="color: var(--accent-neon);">UNIVIEW</strong> a precios insuperables.</p>
+                <a href="${resolvePath('src/pages/products.html')}?brand=uniview" style="color: var(--white-pure); font-size: 0.82rem; font-weight: 800; text-decoration: underline; margin-left: 5px;">VER OFERTAS</a>
+            </div>
+        `;
+        document.body.insertBefore(topBar, document.body.firstChild);
+
         // Load Header
         if (headerContainer) {
             const response = await fetch(resolvePath('src/components/layout/header.html'));
