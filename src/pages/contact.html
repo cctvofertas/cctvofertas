@@ -11,7 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/global.css">
-</head>
+
+    <!-- PWA & Mobile -->
+    <meta name="theme-color" content="#090B14">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="apple-touch-icon" href="../../src/assets/images/logo.png">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="CCTV OFERTAS | Expertos en Videovigilancia">
+    <meta property="og:description" content="Protege lo que más importa. CCTV, NVR, kits de vigilancia y asesoría profesional en Colombia.">
+    <meta property="og:image" content="../../src/assets/images/logo.png">
+    <meta property="og:type" content="website">
+    </head>
 <body class="tech-theme">
     <canvas id="security-grid-canvas" class="bg-canvas"></canvas>
     
@@ -46,12 +57,25 @@
 
                 <div class="glass reveal" style="padding: 3rem; border: 1px solid rgba(99, 102, 241, 0.2);">
                     <h3 style="margin-bottom: 2rem;">Enviar Mensaje Directo</h3>
-                    <form action="#" class="grid" style="gap: 1rem;">
-                        <input type="text" placeholder="Tu Nombre" class="glass" style="padding: 1rem; color: white; border-radius: 6px; width: 100%;">
-                        <input type="email" placeholder="Correo Electrónico" class="glass" style="padding: 1rem; color: white; border-radius: 6px; width: 100%;">
-                        <textarea placeholder="¿Cómo podemos ayudarte hoy?" class="glass" style="padding: 1rem; color: white; border-radius: 6px; width: 100%; height: 150px; resize: none;"></textarea>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">ENVIAR CONSULTA</button>
+                    <form id="contact-whatsapp-form" class="grid" style="gap: 1rem;">
+                        <input type="text" id="wa-name" placeholder="Tu Nombre" class="glass" style="padding: 1rem; color: white; border-radius: 6px; width: 100%;" required>
+                        <input type="email" id="wa-email" placeholder="Correo Electrónico" class="glass" style="padding: 1rem; color: white; border-radius: 6px; width: 100%;" required>
+                        <textarea id="wa-msg" placeholder="¿Cómo podemos ayudarte hoy?" class="glass" style="padding: 1rem; color: white; border-radius: 6px; width: 100%; height: 150px; resize: none;" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fab fa-whatsapp" style="margin-right:8px;"></i> ENVIAR POR WHATSAPP</button>
                     </form>
+                    <script>
+                        document.getElementById('contact-whatsapp-form').addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            const name = document.getElementById('wa-name').value;
+                            const email = document.getElementById('wa-email').value;
+                            const msg = document.getElementById('wa-msg').value;
+                            // Format Whatsapp Template
+                            const text = `¡Hola Equipo CCTV Ofertas!\nSoy ${name} (${email}).\n\nConsulta:\n${msg}`;
+                            const phone = '573014924988'; // As seen in the contact block
+                            const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+                            window.open(url, '_blank');
+                        });
+                    </script>
                 </div>
             </div>
         </section>

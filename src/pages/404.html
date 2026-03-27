@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Señal Perdida | CCTV OFERTAS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    
+    <style>
+        .error-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .static-noise {
+            font-family: var(--font-mono);
+            font-size: 8rem;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 2px var(--danger);
+            margin: 0;
+            position: relative;
+            animation: glitch 3s infinite;
+        }
+        
+        @keyframes glitch {
+            0% { text-shadow: 0 0 0 transparent; }
+            5% { text-shadow: 5px 0 0 var(--accent-neon), -5px 0 0 var(--accent-electric); }
+            10% { text-shadow: 0 0 0 transparent; }
+            15% { text-shadow: -5px 0 0 var(--accent-neon), 5px 0 0 var(--accent-electric); }
+            20% { text-shadow: 0 0 0 transparent; }
+            100% { text-shadow: 0 0 0 transparent; }
+        }
+        
+        .signal-loss {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            color: var(--white-pure);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-family: var(--font-mono);
+            border-bottom: 1px solid var(--danger);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+
+    <!-- PWA & Mobile -->
+    <meta name="theme-color" content="#090B14">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="apple-touch-icon" href="../../src/assets/images/logo.png">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="CCTV OFERTAS | Expertos en Videovigilancia">
+    <meta property="og:description" content="Protege lo que más importa. CCTV, NVR, kits de vigilancia y asesoría profesional en Colombia.">
+    <meta property="og:image" content="../../src/assets/images/logo.png">
+    <meta property="og:type" content="website">
+    </head>
+<body class="tech-theme">
+    <canvas id="security-grid-canvas" class="bg-canvas"></canvas>
+    
+    <header id="site-header" class="site-header"></header>
+
+    <main class="container">
+        <section class="error-page reveal">
+            <h1 class="static-noise">404</h1>
+            <h2 class="signal-loss"><i class="fas fa-exclamation-triangle" style="color: var(--danger); margin-right: 15px;"></i> SEÑAL DE VÍDEO PERDIDA</h2>
+            <p class="text-slate" style="max-width: 500px; margin-bottom: 3rem;">El sector al que intentas acceder se encuentra fuera de cobertura o la ruta ha sido modificada. Verifica el enlace o regresa al centro de control.</p>
+            <a href="../../index.html" class="btn btn-primary"><i class="fas fa-satellite-dish" style="margin-right: 10px;"></i> REESTABLECER CONEXIÓN (INICIO)</a>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script type="module" src="../scripts/layout.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
+</body>
+</html>

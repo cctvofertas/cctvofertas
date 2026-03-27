@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Initial check
 });
+
+// Register Service Worker for PWA
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        const pathParts = window.location.pathname.split('/');
+        const isInPages = pathParts.includes('pages');
+        const depth = isInPages ? '../../' : './';
+        navigator.serviceWorker.register(depth + 'sw.js')
+            .then(reg => console.log('SW Registered with scope:', reg.scope))
+            .catch(err => console.error('SW Registration Failed:', err));
+    });
+}
