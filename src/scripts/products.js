@@ -30,6 +30,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     const resetBtn = document.getElementById('reset-filters');
     const paginationContainer = document.getElementById('pagination-container');
     const paginationContainerTop = document.getElementById('pagination-container-top');
+    const btnViewGrid = document.getElementById('view-grid');
+    const btnViewList = document.getElementById('view-list');
+    
+    // --- View Toggle Logic ---
+    let currentView = localStorage.getItem('catalogView') || 'grid';
+    
+    function applyViewMode() {
+        if (!productContainer) return;
+        if (currentView === 'list') {
+            productContainer.classList.add('list-view');
+            btnViewList?.classList.add('active');
+            btnViewGrid?.classList.remove('active');
+        } else {
+            productContainer.classList.remove('list-view');
+            btnViewGrid?.classList.add('active');
+            btnViewList?.classList.remove('active');
+        }
+    }
+
+    if (btnViewGrid && btnViewList) {
+        btnViewGrid.addEventListener('click', () => {
+            currentView = 'grid';
+            localStorage.setItem('catalogView', 'grid');
+            applyViewMode();
+        });
+        btnViewList.addEventListener('click', () => {
+            currentView = 'list';
+            localStorage.setItem('catalogView', 'list');
+            applyViewMode();
+        });
+    }
+    
+    // Apply initial view
+    applyViewMode();
     
     let currentPage = 1;
     const itemsPerPage = SITE_CONFIG.catalog.itemsPerPage;
@@ -256,6 +290,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             </button>
         `;
 
+        // --- Go To Page Input ---
+        if (totalPages > 1) {
+            html += `
+                <div class="go-to-page" style="display: inline-flex; align-items: center; gap: 8px; margin-left: 15px;">
+                    <span style="font-size: 0.85rem; color: var(--slate-400); font-weight: 600;">Ir a:</span>
+                    <input type="number" min="1" max="${totalPages}" class="goto-input" placeholder="${currentPage}" style="width: 50px; padding: 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; text-align: center; outline: none; font-family: var(--font-mono); font-size: 0.85rem;">
+                    <button class="btn-secondary goto-btn" title="Ir a la página" style="padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.15); color: var(--white-pure); cursor: pointer; transition: all 0.3s;"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            `;
+        }
+
         paginationContainer.innerHTML = html;
         paginationContainer.classList.add('visible');
         
@@ -301,6 +346,27 @@ document.addEventListener('DOMContentLoaded', async () => {
                     currentPage = parseInt(btn.dataset.page);
                     updateView();
                 });
+            });
+
+            container.querySelector('.goto-btn')?.addEventListener('click', () => {
+                const input = container.querySelector('.goto-input');
+                if (input && input.value.trim() !== '') {
+                    let page = parseInt(input.value);
+                    if (!isNaN(page)) {
+                        if (page < 1) page = 1;
+                        if (page > totalPages) page = totalPages;
+                        if (currentPage !== page) {
+                            currentPage = page;
+                            updateView();
+                        }
+                    }
+                }
+            });
+
+            container.querySelector('.goto-input')?.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    container.querySelector('.goto-btn')?.click();
+                }
             });
         };
         
