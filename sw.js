@@ -17,21 +17,47 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                if (response) {
-                    return response; // Return cached asset
-                }
-                return fetch(event.request).catch(error => {
-                    // Fallback to 404 page if offline and not cached
-                    if (event.request.destination === 'document') {
-                        return caches.match('/src/pages/404.html');
-                    }
-                    throw error;
+    // Determine if request is for data (JSON) or HTML Document
+    const isDataOrHtml = 
+        event.request.url.includes('.json') || 
+        event.request.destination === 'document';
+
+    if (isDataOrHtml) {
+        // Network-first strategy for data and HTML
+        event.respondWith(
+            fetch(event.request)
+                .then(networkResponse => {
+                    return caches.open(CACHE_NAME).then(cache => {
+                        cache.put(event.request, networkResponse.clone());
+                        return networkResponse;
+                    });
+                })
+                .catch(() => {
+                    return caches.match(event.request).then(cachedResponse => {
+                        if (cachedResponse) {
+                            return cachedResponse;
+                        }
+                        if (event.request.destination === 'document') {
+                            return caches.match('/src/pages/404.html');
+                        }
+                    });
+                })
+        );
+    } else {
+        // Cache-first for images, css, js
+        event.respondWith(
+            caches.match(event.request).then(cachedResponse => {
+                return cachedResponse || fetch(event.request).then(networkResponse => {
+                    return caches.open(CACHE_NAME).then(cache => {
+                        if (event.request.url.startsWith('http')) {
+                            cache.put(event.request, networkResponse.clone());
+                        }
+                        return networkResponse;
+                    });
                 });
             })
-    );
+        );
+    }
 });
 
 self.addEventListener('activate', (event) => {

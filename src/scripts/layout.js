@@ -31,12 +31,16 @@ async function injectLayout() {
 
         // Load Header
         if (headerContainer) {
-            const response = await fetch(resolvePath('src/components/layout/header.html'));
-            if (!response.ok) throw new Error('Failed to load header');
-            let html = await response.text();
+            let rawHtml = sessionStorage.getItem('cctv_cachedHeader');
+            if (!rawHtml) {
+                const response = await fetch(resolvePath('src/components/layout/header.html'));
+                if (!response.ok) throw new Error('Failed to load header');
+                rawHtml = await response.text();
+                sessionStorage.setItem('cctv_cachedHeader', rawHtml);
+            }
             
             // Basic template substitution for common values
-            html = html.replace(/{{COMPANY_NAME}}/g, SITE_CONFIG.company.name);
+            let html = rawHtml.replace(/{{COMPANY_NAME}}/g, SITE_CONFIG.company.name);
             
             headerContainer.innerHTML = html;
             
@@ -57,12 +61,16 @@ async function injectLayout() {
 
         // Load Footer
         if (footerContainer) {
-            const response = await fetch(resolvePath('src/components/layout/footer.html'));
-            if (!response.ok) throw new Error('Failed to load footer');
-            let html = await response.text();
+            let rawHtml = sessionStorage.getItem('cctv_cachedFooter');
+            if (!rawHtml) {
+                const response = await fetch(resolvePath('src/components/layout/footer.html'));
+                if (!response.ok) throw new Error('Failed to load footer');
+                rawHtml = await response.text();
+                sessionStorage.setItem('cctv_cachedFooter', rawHtml);
+            }
             
             // Substitution
-            html = html.replace(/{{WHATSAPP_LINK}}/g, SITE_CONFIG.social.whatsapp);
+            let html = rawHtml.replace(/{{WHATSAPP_LINK}}/g, SITE_CONFIG.social.whatsapp);
             html = html.replace(/{{PHONE}}/g, SITE_CONFIG.company.phone);
             html = html.replace(/{{EMAIL}}/g, SITE_CONFIG.company.email);
             html = html.replace(/{{YEAR}}/g, new Date().getFullYear());
