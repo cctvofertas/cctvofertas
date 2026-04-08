@@ -13,7 +13,7 @@ async function injectLayout() {
     const pathParts = window.location.pathname.split('/');
     const isInPages = pathParts.includes('pages');
     const depth = isInPages ? '../../' : '';
-    
+
     const resolvePath = (relPath) => depth + relPath;
 
     try {
@@ -38,12 +38,12 @@ async function injectLayout() {
                 rawHtml = await response.text();
                 sessionStorage.setItem('cctv_cachedHeader', rawHtml);
             }
-            
+
             // Basic template substitution for common values
             let html = rawHtml.replace(/{{COMPANY_NAME}}/g, SITE_CONFIG.company.name);
-            
+
             headerContainer.innerHTML = html;
-            
+
             // Adjust links and image sources for nested pages
             headerContainer.querySelectorAll('a, img').forEach(el => {
                 const attr = el.tagName.toLowerCase() === 'a' ? 'href' : 'src';
@@ -54,7 +54,7 @@ async function injectLayout() {
                     el.setAttribute(attr, resolvePath(cleanVal));
                 }
             });
-            
+
             setActiveLink();
             initMobileMenu();
         }
@@ -68,15 +68,15 @@ async function injectLayout() {
                 rawHtml = await response.text();
                 sessionStorage.setItem('cctv_cachedFooter', rawHtml);
             }
-            
+
             // Substitution
             let html = rawHtml.replace(/{{WHATSAPP_LINK}}/g, SITE_CONFIG.social.whatsapp);
             html = html.replace(/{{PHONE}}/g, SITE_CONFIG.company.phone);
             html = html.replace(/{{EMAIL}}/g, SITE_CONFIG.company.email);
             html = html.replace(/{{YEAR}}/g, new Date().getFullYear());
-            
+
             footerContainer.innerHTML = html;
-            
+
             // Adjust links and image sources
             footerContainer.querySelectorAll('a, img').forEach(el => {
                 const attr = el.tagName.toLowerCase() === 'a' ? 'href' : 'src';
@@ -95,11 +95,11 @@ async function injectLayout() {
 function setActiveLink() {
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (!href) return;
-        
+
         // Match base filename to handle depth differences
         const filename = href.split('/').pop();
         if (currentPath.endsWith(filename) || (currentPath.endsWith('/') && filename === 'index.html')) {

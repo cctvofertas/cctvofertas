@@ -18,8 +18,8 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
     // Determine if request is for data (JSON) or HTML Document
-    const isDataOrHtml = 
-        event.request.url.includes('.json') || 
+    const isDataOrHtml =
+        event.request.url.includes('.json') ||
         event.request.destination === 'document';
 
     if (isDataOrHtml) {
