@@ -21,7 +21,8 @@ const SITE_CONFIG = {
     catalog: {
         itemsPerPage: 8,
         featuredCategories: ['cameras', 'kits', 'recorders', 'smarthome']
-    }
+    },
+    version: "1.1.1"
 };
 
 export default SITE_CONFIG;

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cctv-ofertas-v1';
+const CACHE_NAME = 'cctv-ofertas-v1.1.1';
 const ASSETS = [
     '/',
     '/index.html',

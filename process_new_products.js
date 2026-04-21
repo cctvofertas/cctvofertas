@@ -60,6 +60,7 @@ function toTitleCase(str) {
 }
 
 let addedCount = 0;
+let newProducts = [];
 
 for (const file of uploadFiles) {
     const parsed = path.parse(file);
@@ -110,9 +111,44 @@ for (const file of uploadFiles) {
     };
 
     products.push(newProduct);
+    newProducts.push(newProduct);
     addedCount++;
 }
 
+// Write back to products.json
 fs.writeFileSync(productsPath, JSON.stringify(products, null, 4));
-console.log(`Added ${addedCount} new products from images.`);
+console.log(`✅ products.json actualizado. Se agregaron ${newProducts.length} productos.`);
 
+// --- AUTOMATIC VERSION BUMPING ---
+const configPath = path.join(__dirname, 'src', 'config', 'site-config.js');
+const swPath = path.join(__dirname, 'sw.js');
+
+try {
+    // 1. Update site-config.js version
+    let configContent = fs.readFileSync(configPath, 'utf8');
+    const versionMatch = configContent.match(/version:\s*"(\d+)\.(\d+)\.(\d+)"/);
+    
+    if (versionMatch) {
+        const major = parseInt(versionMatch[1]);
+        const minor = parseInt(versionMatch[2]);
+        const patch = parseInt(versionMatch[3]) + 1;
+        const newVersion = `${major}.${minor}.${patch}`;
+        
+        configContent = configContent.replace(/version:\s*".*?"/, `version: "${newVersion}"`);
+        fs.writeFileSync(configPath, configContent);
+        console.log(`⏲️ Versión del sitio incrementada a: ${newVersion}`);
+
+        // 2. Update sw.js CACHE_NAME
+        if (fs.existsSync(swPath)) {
+            let swContent = fs.readFileSync(swPath, 'utf8');
+            swContent = swContent.replace(/const CACHE_NAME = '.*?';/, `const CACHE_NAME = 'cctv-ofertas-v${newVersion}';`);
+            fs.writeFileSync(swPath, swContent);
+            console.log(`\uD83D\uDEE1\uFE0F Service Worker actualizado a la versi\u00F3n: v${newVersion}`);
+        }
+    }
+} catch (error) {
+    console.error('⚠️ Error al actualizar la versión:', error.message);
+}
+
+console.log('\n🎉 ¡Proceso completado exitosamente!');
+console.log('Ahora puedes subir los cambios. Los navegadores de los clientes se actualizarán automáticamente.');
