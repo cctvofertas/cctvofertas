@@ -13,37 +13,45 @@ const uploadFiles = fs.readdirSync(uploadsPath).filter(f => f.match(/\.(png|jpg|
 // Some basic keyword matching for brands and categories
 function getBrand(name) {
     const lName = name.toLowerCase();
+    // For this specific batch, everything is Uniview as confirmed by user
+    if (lName.includes('uniview') || lName.includes('unv')) return 'uniview';
+    
     if (lName.includes('hikvision')) return 'hikvision';
     if (lName.includes('dahua')) return 'dahua';
     if (lName.includes('ezviz')) return 'ezviz';
     if (lName.includes('imou')) return 'imou';
-    if (lName.includes('uniview')) return 'uniview';
     if (lName.includes('lexa')) return 'lexa';
     if (lName.includes('kingston')) return 'kingston';
     if (lName.includes('tenda')) return 'tenda';
     if (lName.includes('logitech')) return 'logitech';
     if (lName.includes('genius')) return 'genius';
     if (lName.includes('xprinter')) return 'xprinter';
-    return 'other';
+    
+    // Default to uniview for this batch
+    return 'uniview';
 }
 
 function getCategory(name) {
     const lName = name.toLowerCase();
-    if (lName.includes('cámara') || lName.includes('camara')) return 'cámaras';
-    if (lName.includes('nvr') || lName.includes('dvr')) return 'grabadores';
-    if (lName.includes('kit') && (lName.includes('cámara') || lName.includes('camara'))) return 'kits';
-    if (lName.includes('cerradura') || lName.includes('bombillo') || lName.includes('solar')) return 'smarthome';
-    if (lName.includes('teclado') || lName.includes('mouse') || lName.includes('pad')) return 'perifericos';
-    if (lName.includes('impresora') || lName.includes('lector') || lName.includes('cajon')) return 'pos';
-    if (lName.includes('memoria') || lName.includes('disco')) return 'almacenamiento';
-    return 'accesorios';
+    
+    if (lName.includes('kit')) return 'kits';
+    if (lName.includes('cámara') || lName.includes('camara') || lName.includes('bullet') || lName.includes('turret') || lName.includes('ptz') || lName.includes('domo') || lName.includes('eyeball') || lName.includes('omniview') || lName.includes('colorhunter')) return 'cameras';
+    if (lName.includes('nvr') || lName.includes('dvr') || lName.includes('grabador') || lName.includes('videograbador') || lName.includes('grabadora')) return 'recorders';
+    if (lName.includes('monitor') || lName.includes('pantalla')) return 'monitores';
+    if (lName.includes('switch') || lName.includes('conmutador') || lName.includes('poe') || lName.includes('sfp') || lName.includes('hub')) return 'networking';
+    if (lName.includes('cerradora') || lName.includes('cerradura') || lName.includes('torniquete') || lName.includes('lector') || lName.includes('terminal') || lName.includes('control de acceso') || lName.includes('credencial') || lName.includes('mifare')) return 'control-acceso';
+    if (lName.includes('portero') || lName.includes('intercom') || lName.includes('estación de puerta') || lName.includes('estacion interior') || lName.includes('videoportero')) return 'intercom';
+    if (lName.includes('memoria') || lName.includes('disco') || lName.includes('tarjeta tf') || lName.includes('micro sd') || lName.includes('sd card')) return 'almacenamiento';
+    if (lName.includes('smart') || lName.includes('bombillo') || lName.includes('solar')) return 'smarthome';
+    
+    return 'accessories';
 }
 
 function getTech(name) {
     const lName = name.toLowerCase();
     if (lName.includes('wifi') || lName.includes('wi-fi') || lName.includes('bluetooth') || lName.includes('inalambrico')) return 'wifi';
-    if (lName.includes('ip') || lName.includes('red') || lName.includes('rj45')) return 'ip';
-    if (lName.includes('analogo') || lName.includes('ahd') || lName.includes('tvi')) return 'analoga';
+    if (lName.includes('ip') || lName.includes('red') || lName.includes('network') || lName.includes('rj45')) return 'ip';
+    if (lName.includes('analogo') || lName.includes('analógica') || lName.includes('ahd') || lName.includes('tvi') || lName.includes('hdtvi') || lName.includes('hdcvi')) return 'analoga';
     return 'other';
 }
 
@@ -55,7 +63,7 @@ let addedCount = 0;
 
 for (const file of uploadFiles) {
     const parsed = path.parse(file);
-    let originalName = parsed.name; // e.g. "CABLE HDMI VERSIÓN 2.0 - 4K"
+    let originalName = parsed.name; 
     
     // Check if it already exists
     const exists = products.find(p => p.image.includes(encodeURI(file)) || p.name.toLowerCase() === originalName.toLowerCase());
@@ -67,12 +75,12 @@ for (const file of uploadFiles) {
         continue;
     }
 
-    // Capitalize properly: "Cable Hdmi Versión 2.0 - 4k"
+    // Capitalize properly
     let cleanName = originalName.replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
     cleanName = toTitleCase(cleanName);
 
-    const category = getCategory(cleanName);
     const brand = getBrand(cleanName);
+    const category = getCategory(cleanName);
     const tech = getTech(cleanName);
 
     // Create a safe filename 
@@ -83,11 +91,12 @@ for (const file of uploadFiles) {
     // Move file
     fs.renameSync(path.join(uploadsPath, file), newImagePath);
 
-    let priceFromDb = 0;
     // Guess description
-    let description = `${cleanName}. Ideal para complementar tus sistemas de tecnología y seguridad.`;
-    if (category === 'cámaras') description = `Cámara de seguridad ${cleanName}. Alta resolución y fiabilidad para tu tranquilidad.`;
-    if (category === 'accesorios' && cleanName.toLowerCase().includes('cable')) description = `${cleanName} de alta resistencia y durabilidad garantizada.`;
+    let description = `${cleanName}. Tecnología de vanguardia Uniview para soluciones profesionales.`;
+    if (category === 'cameras') description = `Cámara de seguridad ${brand.toUpperCase()} ${cleanName}. Alta definición y visión nocturna avanzada.`;
+    if (category === 'networking') description = `Equipo de red ${cleanName}. Solución robusta para sistemas de videovigilancia IP.`;
+    if (category === 'recorders') description = `Grabador ${brand.toUpperCase()} ${cleanName}. Gestión eficiente de video y almacenamiento seguro.`;
+    if (category === 'monitores') description = `Monitor Profesional ${cleanName}. Diseñado para operación continua 24/7.`;
     
     const newProduct = {
         name: cleanName,
