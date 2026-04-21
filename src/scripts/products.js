@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Fetch products from local JSON
     try {
-        const response = await fetch(`../data/products.json?v=${SITE_CONFIG.version}`);
+        const response = await fetch('../data/products_v112.json');
         products = await response.json();
     } catch (error) {
         console.error('Error loading products:', error);

@@ -1,18 +1,40 @@
-const CACHE_NAME = 'cctv-ofertas-v1.1.2';
+const CACHE_NAME = 'cctv-ofertas-v1.1.2-nuclear';
 const ASSETS = [
     '/',
     '/index.html',
     '/src/styles/global.css',
     '/src/scripts/layout.js',
     '/src/scripts/main.js',
-    '/src/assets/images/logo.png'
+    '/src/assets/images/logo.png',
+    '/src/data/products_v112.json'
 ];
 
 self.addEventListener('install', (event) => {
+    self.skipWaiting(); // Force activate new service worker
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => cache.addAll(ASSETS))
             .catch(err => console.error('SW Install Cache Error:', err))
+    );
+});
+
+self.addEventListener('activate', (event) => {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        Promise.all([
+            // Claim all clients immediately
+            self.clients.claim(),
+            // Clean up old caches
+            caches.keys().then(cacheNames => {
+                return Promise.all(
+                    cacheNames.map(cacheName => {
+                        if (cacheWhitelist.indexOf(cacheName) === -1) {
+                            return caches.delete(cacheName);
+                        }
+                    })
+                );
+            })
+        ])
     );
 });
 
@@ -58,19 +80,4 @@ self.addEventListener('fetch', (event) => {
             })
         );
     }
-});
-
-self.addEventListener('activate', (event) => {
-    const cacheWhitelist = [CACHE_NAME];
-    event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames.map(cacheName => {
-                    if (cacheWhitelist.indexOf(cacheName) === -1) {
-                        return caches.delete(cacheName);
-                    }
-                })
-            );
-        })
-    );
 });
