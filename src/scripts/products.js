@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let products = [];
 
-    // Fetch products from local JSON
+    // Fetch products from local JSON — cache-bust with build version to force fresh data
     try {
-        const response = await fetch('../data/products_v112.json');
+        const cacheBust = `?v=${SITE_CONFIG.version}&t=${Date.now()}`;
+        const response = await fetch(`../data/products_v112.json${cacheBust}`, { cache: 'no-store' });
         products = await response.json();
     } catch (error) {
         console.error('Error loading products:', error);

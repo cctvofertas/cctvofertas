@@ -1,12 +1,12 @@
-const CACHE_NAME = 'cctv-ofertas-v1.1.2-nuclear';
+const CACHE_NAME = 'cctv-ofertas-v1.1.3';
 const ASSETS = [
     '/',
     '/index.html',
     '/src/styles/global.css',
     '/src/scripts/layout.js',
     '/src/scripts/main.js',
-    '/src/assets/images/logo.png',
-    '/src/data/products_v112.json'
+    '/src/assets/images/logo.png'
+    // JSON data excluded from precache to always get fresh data
 ];
 
 self.addEventListener('install', (event) => {
@@ -39,13 +39,19 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-    // Determine if request is for data (JSON) or HTML Document
-    const isDataOrHtml =
-        event.request.url.includes('.json') ||
-        event.request.destination === 'document';
+    const url = new URL(event.request.url);
 
-    if (isDataOrHtml) {
-        // Network-first strategy for data and HTML
+    // NEVER cache JSON data files - always network-first with no cache storage
+    if (url.pathname.includes('.json')) {
+        event.respondWith(
+            fetch(event.request, { cache: 'no-store' })
+                .catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
+    // Network-first for HTML documents
+    if (event.request.destination === 'document') {
         event.respondWith(
             fetch(event.request)
                 .then(networkResponse => {
@@ -56,16 +62,15 @@ self.addEventListener('fetch', (event) => {
                 })
                 .catch(() => {
                     return caches.match(event.request).then(cachedResponse => {
-                        if (cachedResponse) {
-                            return cachedResponse;
-                        }
-                        if (event.request.destination === 'document') {
-                            return caches.match('/src/pages/404.html');
-                        }
+                        return cachedResponse || caches.match('/src/pages/404.html');
                     });
                 })
         );
-    } else {
+        return;
+    }
+
+    // Cache-first for other static assets (images, css, js)
+    if (true) {
         // Cache-first for images, css, js
         event.respondWith(
             caches.match(event.request).then(cachedResponse => {

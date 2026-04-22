@@ -22,7 +22,7 @@ const SITE_CONFIG = {
         itemsPerPage: 8,
         featuredCategories: ['cameras', 'kits', 'recorders', 'smarthome']
     },
-    version: "1.1.2"
+    version: "1.1.3"
 };
 
 export default SITE_CONFIG;
