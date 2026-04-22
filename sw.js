@@ -70,19 +70,16 @@ self.addEventListener('fetch', (event) => {
     }
 
     // Cache-first for other static assets (images, css, js)
-    if (true) {
-        // Cache-first for images, css, js
-        event.respondWith(
-            caches.match(event.request).then(cachedResponse => {
-                return cachedResponse || fetch(event.request).then(networkResponse => {
-                    return caches.open(CACHE_NAME).then(cache => {
-                        if (event.request.url.startsWith('http')) {
-                            cache.put(event.request, networkResponse.clone());
-                        }
-                        return networkResponse;
-                    });
+    event.respondWith(
+        caches.match(event.request).then(cachedResponse => {
+            return cachedResponse || fetch(event.request).then(networkResponse => {
+                return caches.open(CACHE_NAME).then(cache => {
+                    if (event.request.url.startsWith('http')) {
+                        cache.put(event.request, networkResponse.clone());
+                    }
+                    return networkResponse;
                 });
-            })
-        );
-    }
+            });
+        })
+    );
 });
