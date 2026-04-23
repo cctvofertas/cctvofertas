@@ -1,0 +1,13 @@
+# AI Assistant tools - do NOT commit to repo
+.agents/
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment files
+*.env
+.env.local
